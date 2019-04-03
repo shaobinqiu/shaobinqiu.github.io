@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Dao  | Ananke: a Hugo Theme</title>
+    <title>Dao  | SLURM</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -27,45 +27,86 @@
     
 
     
-      <link href="https://shaobinqiu.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Dao" />
-      <link href="https://shaobinqiu.github.io/index.xml" rel="feed" type="application/rss+xml" title="Dao" />
-    
 
-    <meta property="og:title" content="Ananke: a Hugo Theme" />
-<meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://shaobinqiu.github.io/" />
-
-
-
-<meta property="og:updated_time" content="2019-01-21T01:37:56&#43;08:00"/>
-
-
-
-
-
-
+    <meta property="og:title" content="SLURM" />
+<meta property="og:description" content="SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
+squeue  任务状态
+PD 排队等待
+R 运行
+S 挂起
+F 失败结束
+CA 取消
+TO 超时
+NF 节点故障
+3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
+任务脚本参考 job.sh
+#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shaobinqiu.github.io/post/slurm/" />
 
 
 
+<meta property="article:published_time" content="2018-09-11T15:07:34&#43;08:00"/>
 
-<meta itemprop="name" content="Ananke: a Hugo Theme">
-<meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
+<meta property="article:modified_time" content="2018-09-11T15:54:13&#43;08:00"/>
 
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="SLURM">
+<meta itemprop="description" content="SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
+squeue  任务状态
+PD 排队等待
+R 运行
+S 挂起
+F 失败结束
+CA 取消
+TO 超时
+NF 节点故障
+3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
+任务脚本参考 job.sh
+#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5.">
+
+
+<meta itemprop="datePublished" content="2018-09-11T15:07:34&#43;08:00" />
+<meta itemprop="dateModified" content="2018-09-11T15:07:34&#43;08:00" />
+<meta itemprop="wordCount" content="93">
+
+
+
+<meta itemprop="keywords" content="linux,SLURM," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ananke: a Hugo Theme"/>
-<meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
+<meta name="twitter:title" content="SLURM"/>
+<meta name="twitter:description" content="SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
+squeue  任务状态
+PD 排队等待
+R 运行
+S 挂起
+F 失败结束
+CA 取消
+TO 超时
+NF 节点故障
+3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
+任务脚本参考 job.sh
+#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5."/>
 
   </head>
 
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://shaobinqiu.github.io/images/gohugo-default-sample-hero-image.jpg');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://shaobinqiu.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -131,148 +172,142 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Ananke: a Hugo Theme
-        </h1>
-        
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
-            The last theme you&#39;ll ever need. Maybe.
-          </h2>
-        
-      </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    <p>Welcome to my blog with some of my work in progress. I&rsquo;ve been working on this book idea. You can read some of the chapters below.</p>
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        ARTICLES
+      </p>
+      <h1 class="f1 athelas mb1">SLURM</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2018-09-11T15:07:34&#43;08:00">September 11, 2018</time>      
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h1 id="slurm">SLURM</h1>
+
+<h2 id="1-任务提交">1. 任务提交</h2>
+
+<pre><code>sbatch job.sh
+</code></pre>
+
+<h2 id="2-任务查询">2. 任务查询</h2>
+
+<p>查看用户任务</p>
+
+<pre><code>squeue
+</code></pre>
+
+<p>任务状态</p>
+
+<p>PD    排队等待</p>
+
+<p>R     运行</p>
+
+<p>S     挂起</p>
+
+<p>F     失败结束</p>
+
+<p>CA    取消</p>
+
+<p>TO    超时</p>
+
+<p>NF    节点故障</p>
+
+<h2 id="3-任务删除">3. 任务删除</h2>
+
+<pre><code>scancel jobnumber #任务号可以通过squeue看到
+</code></pre>
+
+<h2 id="4-查看计算资源">4. 查看计算资源</h2>
+
+<pre><code>sinfo
+</code></pre>
+
+<p>分区和时间上限都可以看到</p>
+
+<h1 id="任务脚本参考">任务脚本参考</h1>
+
+<p>job.sh</p>
+
+<pre><code>#!/bin/bash -l
+# NOTE the -l flag!
+#
+#SBATCH -J NAME
+# Default in slurm
+# Request 5 hours run time
+#SBATCH -t 5:0:0
+#
+#SBATCH -p small -N 1 -n 12
+# NOTE Each small node has 12 cores
+#
+
+module load vasp/5.4.4-impi-mkl
+
+# add your job logical here!!!
+mpirun -n 12 vasp_std       
+</code></pre>
+
+<p>more SLURM:</p>
+
+<p><a href="https://research.computing.yale.edu/support/hpc/user-guide/slurm">https://research.computing.yale.edu/support/hpc/user-guide/slurm</a></p>
+
+<p><a href="https://hpcc.usc.edu/support/documentation/slurm/">https://hpcc.usc.edu/support/documentation/slurm/</a></p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/linux" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">linux</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/slurm" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">SLURM</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/post/vim/">vim</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/conda/">conda</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/linux-simplecommands/">Linux Simplecommands</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
 
   </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-       
-          <h1 class="flex-none">
-            Recent Articles
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/vasp_elasticmoduli/" class="color-inherit dim link">
-            弹性模量的vasp计算
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          1.优化结构 2.计算弹模 INCAR
-ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = 1e-5 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
-弹性矩阵会直接写在OUTCAR里。
-计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。
-pcell
- SYMMETRIZED ELASTIC MODULI (kBar) Direction XX YY ZZ XY YZ ZX -------------------------------------------------------------------------------- XX 10531.4122 1243.9931 1243.9931 0.0000 -0.0000 0.0000 YY 1243.9931 10531.4122 1243.9931 0.0000 0.0000 0.0000 ZZ 1243.
-        </div>
-          <a href="/post/vasp_elasticmoduli/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/dftb/" class="color-inherit dim link">
-            DFTB&#43;
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-           NFTB+: http://www.dftbplus.org/
-案例文件：https://github.com/shaobinqiu/dftb_example
-dftb简单说明 结构文件：sheet文件夹下的geo_start.gen文件。 第一行第一个数值为原子数目 后面字符S代表晶体，需要在最后加上lattice；C代表分子，不需要加lattice。
-参数文件：dftb_in.hsd
-优化后结构文件：sheet文件夹下的geo_opt.gen和geo_opt.xyz文件。
-运行命令 dftb+ dftb_in.hsd  
-        </div>
-          <a href="/post/dftb/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-      </section>
-
-      
-      <section class="w-100">
-        <h1 class="f3">More</h1>
-        
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vasp_electron_phonon_coupling/" class="link black dim">
-              电声耦合强度的vasp计算
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vasp_parcharg/" class="link black dim">
-              指定能级的电子时空间分布的vasp计算
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/filezilla/" class="link black dim">
-              filezilla的使用
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vasp_example/" class="link black dim">
-              15上的vasp计算提交示范
-            </a>
-          </h2>
-        
-
-        
-        
-          <a href="/post/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Articles</a>
-        
-        </section>
-      
-
-      </div>
-  
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

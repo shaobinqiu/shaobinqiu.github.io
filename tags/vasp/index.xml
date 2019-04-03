@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ananke: a Hugo Theme on Dao</title>
-    <link>https://shaobinqiu.github.io/</link>
-    <description>Recent content in Ananke: a Hugo Theme on Dao</description>
+    <title>Vasp on Dao</title>
+    <link>https://shaobinqiu.github.io/tags/vasp/</link>
+    <description>Recent content in Vasp on Dao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jan 2019 01:37:56 +0800</lastBuildDate>
     
-	<atom:link href="https://shaobinqiu.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://shaobinqiu.github.io/tags/vasp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,20 +23,6 @@ ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAV
 计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。
 pcell
  SYMMETRIZED ELASTIC MODULI (kBar) Direction XX YY ZZ XY YZ ZX -------------------------------------------------------------------------------- XX 10531.4122 1243.9931 1243.9931 0.0000 -0.0000 0.0000 YY 1243.9931 10531.4122 1243.9931 0.0000 0.0000 0.0000 ZZ 1243.</description>
-    </item>
-    
-    <item>
-      <title>DFTB&#43;</title>
-      <link>https://shaobinqiu.github.io/post/dftb/</link>
-      <pubDate>Sat, 10 Nov 2018 01:37:56 +0800</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/post/dftb/</guid>
-      <description> NFTB+: http://www.dftbplus.org/
-案例文件：https://github.com/shaobinqiu/dftb_example
-dftb简单说明 结构文件：sheet文件夹下的geo_start.gen文件。 第一行第一个数值为原子数目 后面字符S代表晶体，需要在最后加上lattice；C代表分子，不需要加lattice。
-参数文件：dftb_in.hsd
-优化后结构文件：sheet文件夹下的geo_opt.gen和geo_opt.xyz文件。
-运行命令 dftb+ dftb_in.hsd  </description>
     </item>
     
     <item>
@@ -68,19 +54,6 @@ KPUSE: 指定K点，在IBZKPT中找。
     </item>
     
     <item>
-      <title>filezilla的使用</title>
-      <link>https://shaobinqiu.github.io/post/filezilla/</link>
-      <pubDate>Tue, 11 Sep 2018 20:03:09 +0800</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/post/filezilla/</guid>
-      <description>连接服务器可以使用cmder，这里介绍本地和服务器间进行文件传输的一款软件FileZilla。
-下载地址：https://filezilla-project.org/download.php?type=server
-创建连接 点击左上角File下的图标，点击new side创建连接，如图 Host为IP，例：202.38.230.12 Port：端口号，默认22 Protocol：选择ssh协议 Logon Type：Normal User和pw输入自己账号密码 最后点击connect即可
-上传下载 上传：选中本地文件，右键upload即可；
-下载：选中云端文件右键download。</description>
-    </item>
-    
-    <item>
       <title>15上的vasp计算提交示范</title>
       <link>https://shaobinqiu.github.io/post/vasp_example/</link>
       <pubDate>Tue, 11 Sep 2018 18:03:09 +0800</pubDate>
@@ -98,67 +71,6 @@ source ~/.bashrc  这是为了让修改立刻生效。
     </item>
     
     <item>
-      <title>SLURM</title>
-      <link>https://shaobinqiu.github.io/post/slurm/</link>
-      <pubDate>Tue, 11 Sep 2018 15:07:34 +0800</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/post/slurm/</guid>
-      <description>SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
-squeue  任务状态
-PD 排队等待
-R 运行
-S 挂起
-F 失败结束
-CA 取消
-TO 超时
-NF 节点故障
-3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
-任务脚本参考 job.sh
-#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5.</description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>https://shaobinqiu.github.io/post/vim/</link>
-      <pubDate>Thu, 06 Sep 2018 09:54:13 +0800</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/post/vim/</guid>
-      <description>vim 保存编辑 进入insert mode
-按i进入插入模式后, 是从光标当前位置开始输入文件；
-按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文字；
-按o进入插入模式后，是插入新的一行，从行首开始输入文字。
-退出insert mode
-Esc  退出
-：w filename #以指定文件名保存 ：wq #保存退出 ：q！ #不保存强制退出  光标移动 按「G」：移动到文章的最后。
-按「$」：移动到光标所在行的“行尾”。
-按「^」：移动到光标所在行的“行首”。
-按「ctrl」+「b」：屏幕往“后”移动一页。
-按「ctrl」+「f」：屏幕往“前”移动一页。
-按「ctrl」+「u」：屏幕往“后”移动半页。
-按「ctrl」+「d」：屏幕往“前”移动半页。
-删除 「x 」：每按一次，删除光标所在位置的“后面”一个字符。
-「#x 」：例如，「6x」表示删除光标所在位置的“后面”6个字符。
-「dd 」：删除光标所在行。
-「#dd」：从光标所在行开始删除#行。
-「,$d」:删除当前到最后。
-「1,.d」:删除第一行到当前。
-撤销 u
-显示行号 ：set nu  小提示 习惯了按ctrl+s 保存，在用vi的时候，也习惯性的按ctrl+s，结果就是如同终端死掉了一样。
-原来：ctrl+s 终止屏幕输出（即停止回显），你敲的依然有效，只是看不见，可以ctrl+q 恢复输出。</description>
-    </item>
-    
-    <item>
-      <title>conda</title>
-      <link>https://shaobinqiu.github.io/post/conda/</link>
-      <pubDate>Tue, 04 Sep 2018 09:54:13 +0800</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/post/conda/</guid>
-      <description> conda 1.创建环境 conda create -n name [dependent package list]  例如
-conda create -n pyyabc python=3.6  2.激活失效环境 source activate name source deactivate  3.列出环境 conda info --envs  带*为当前环境
-4.删除环境 conda remove -n name --all  </description>
-    </item>
-    
-    <item>
       <title>Vasp_scripts</title>
       <link>https://shaobinqiu.github.io/post/vasp_scripts/</link>
       <pubDate>Wed, 08 Aug 2018 17:06:55 +0800</pubDate>
@@ -166,20 +78,6 @@ conda create -n pyyabc python=3.6  2.激活失效环境 source activate name sou
       <guid>https://shaobinqiu.github.io/post/vasp_scripts/</guid>
       <description>一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有)
 for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;energy done  2.截断能测试 rm summary for i in 250 300 350 400 450 500 550 600 650 do cat&amp;gt;INCAR&amp;lt;&amp;lt;! SYSTEM=Al13 NSW=0 ENCUT=$i ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=2 ISIF=2 ISPIN=2 IBRION=-1 ! mpirun -n 12 vasp_std E=`tail -1 OSZICAR` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;summary mv OSZICAR OSZICAR-$i mv CONTCAR CONTCAR-$i rm WAVECAR DOSCAR done  3.</description>
-    </item>
-    
-    <item>
-      <title>Linux Simplecommands</title>
-      <link>https://shaobinqiu.github.io/post/linux-simplecommands/</link>
-      <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
-      <description> linux简单命令 cp 多个文件文件：
-cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/  cp 拥有共同前缀文件:
-cp /home/usr/dir/file{1..4} ./  查看可导入模块：
-module avail  导入模块：
-module load modulename  查看已导入模块：
-module list  </description>
     </item>
     
     <item>
@@ -199,16 +97,6 @@ NPAR必须是默认等于核数（不设置）；ENCUT要测试；LREAL可根据
 其他： KPOINTS统一使用gamma点
 Automatic mesh 0 Gamma 1 1 1 0 0 0  任务文件参考
 申请计算资源的命令 for i in {3..25} do cp INCAR_R INCAR cp POSCAR-$i POSCAR mpirun -np ${NSLOTS} vasp5.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://shaobinqiu.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shaobinqiu.github.io/contact/</guid>
-      <description>This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out Formspree for a simple, free form service.
-Your Name Email Address An email address is required.  Message   </description>
     </item>
     
   </channel>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elastic Moduli on Dao</title>
+    <link>https://shaobinqiu.github.io/tags/elastic-moduli/</link>
+    <description>Recent content in Elastic Moduli on Dao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Jan 2019 01:37:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://shaobinqiu.github.io/tags/elastic-moduli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>弹性模量的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</link>
+      <pubDate>Mon, 21 Jan 2019 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</guid>
+      <description>1.优化结构 2.计算弹模 INCAR
+ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = 1e-5 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
+弹性矩阵会直接写在OUTCAR里。
+计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。
+pcell
+ SYMMETRIZED ELASTIC MODULI (kBar) Direction XX YY ZZ XY YZ ZX -------------------------------------------------------------------------------- XX 10531.4122 1243.9931 1243.9931 0.0000 -0.0000 0.0000 YY 1243.9931 10531.4122 1243.9931 0.0000 0.0000 0.0000 ZZ 1243.</description>
+    </item>
+    
+  </channel>
+</rss>

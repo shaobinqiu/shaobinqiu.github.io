@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dftb on Dao</title>
+    <link>https://shaobinqiu.github.io/tags/dftb/</link>
+    <description>Recent content in Dftb on Dao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Nov 2018 01:37:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://shaobinqiu.github.io/tags/dftb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DFTB&#43;</title>
+      <link>https://shaobinqiu.github.io/post/dftb/</link>
+      <pubDate>Sat, 10 Nov 2018 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/dftb/</guid>
+      <description> NFTB+: http://www.dftbplus.org/
+案例文件：https://github.com/shaobinqiu/dftb_example
+dftb简单说明 结构文件：sheet文件夹下的geo_start.gen文件。 第一行第一个数值为原子数目 后面字符S代表晶体，需要在最后加上lattice；C代表分子，不需要加lattice。
+参数文件：dftb_in.hsd
+优化后结构文件：sheet文件夹下的geo_opt.gen和geo_opt.xyz文件。
+运行命令 dftb+ dftb_in.hsd  </description>
+    </item>
+    
+  </channel>
+</rss>

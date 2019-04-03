@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Dao</title>
+    <link>https://shaobinqiu.github.io/categories/linux/</link>
+    <description>Recent content in Linux on Dao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Aug 2018 09:54:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://shaobinqiu.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Simplecommands</title>
+      <link>https://shaobinqiu.github.io/post/linux-simplecommands/</link>
+      <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
+      <description> linux简单命令 cp 多个文件文件：
+cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/  cp 拥有共同前缀文件:
+cp /home/usr/dir/file{1..4} ./  查看可导入模块：
+module avail  导入模块：
+module load modulename  查看已导入模块：
+module list  </description>
+    </item>
+    
+  </channel>
+</rss>

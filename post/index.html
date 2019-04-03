@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Dao  | Ananke: a Hugo Theme</title>
+    <title>Dao  | Articles</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -27,33 +27,33 @@
     
 
     
-      <link href="https://shaobinqiu.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Dao" />
-      <link href="https://shaobinqiu.github.io/index.xml" rel="feed" type="application/rss+xml" title="Dao" />
+      <link href="https://shaobinqiu.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Dao" />
+      <link href="https://shaobinqiu.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Dao" />
     
 
-    <meta property="og:title" content="Ananke: a Hugo Theme" />
+    <meta property="og:title" content="Articles" />
 <meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://shaobinqiu.github.io/" />
+<meta property="og:url" content="https://shaobinqiu.github.io/post/" />
 
 
 
-<meta property="og:updated_time" content="2019-01-21T01:37:56&#43;08:00"/>
-
-
-
-
+<meta property="og:updated_time" content="2017-03-02T12:00:00-05:00"/>
 
 
 
 
 
 
-<meta itemprop="name" content="Ananke: a Hugo Theme">
+
+
+
+
+<meta itemprop="name" content="Articles">
 <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ananke: a Hugo Theme"/>
+<meta name="twitter:title" content="Articles"/>
 <meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
 
   </head>
@@ -64,7 +64,7 @@
 
   
   
-  <header class="cover bg-top" style="background-image: url('https://shaobinqiu.github.io/images/gohugo-default-sample-hero-image.jpg');">
+  <header class="cover bg-top" style="background-image: url('https://shaobinqiu.github.io/images/zhuhaiFrisbee.jpg');">
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -133,12 +133,8 @@
 
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Ananke: a Hugo Theme
+          Articles
         </h1>
-        
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
-            The last theme you&#39;ll ever need. Maybe.
-          </h2>
         
       </div>
     </div>
@@ -147,132 +143,311 @@
 
     <main class="pb7" role="main">
       
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    <p>Welcome to my blog with some of my work in progress. I&rsquo;ve been working on this book idea. You can read some of the chapters below.</p>
 
-  </article>
-  
-  
-  
-  
-  
-  
-  
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+      <p>Articles are paginated with only three posts here for example. You can set the number of entries to show on this page with the &ldquo;pagination&rdquo; setting in the config file.</p>
+
+    </section>
+    <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
     
+      <div class="f6">
+        January 21, 2019
+      </div>
     
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-       
-          <h1 class="flex-none">
-            Recent Articles
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/vasp_elasticmoduli/" class="color-inherit dim link">
-            弹性模量的vasp计算
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          1.优化结构 2.计算弹模 INCAR
+    <h1 class="f3 near-black">
+      <a href="/post/vasp_elasticmoduli/" class="link black dim">
+        弹性模量的vasp计算
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      1.优化结构 2.计算弹模 INCAR
 ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = 1e-5 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
 弹性矩阵会直接写在OUTCAR里。
 计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。
 pcell
  SYMMETRIZED ELASTIC MODULI (kBar) Direction XX YY ZZ XY YZ ZX -------------------------------------------------------------------------------- XX 10531.4122 1243.9931 1243.9931 0.0000 -0.0000 0.0000 YY 1243.9931 10531.4122 1243.9931 0.0000 0.0000 0.0000 ZZ 1243.
-        </div>
-          <a href="/post/vasp_elasticmoduli/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
+        </div>
       
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/dftb/" class="color-inherit dim link">
-            DFTB&#43;
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-           NFTB+: http://www.dftbplus.org/
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        November 10, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/dftb/" class="link black dim">
+        DFTB&#43;
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       NFTB+: http://www.dftbplus.org/
 案例文件：https://github.com/shaobinqiu/dftb_example
 dftb简单说明 结构文件：sheet文件夹下的geo_start.gen文件。 第一行第一个数值为原子数目 后面字符S代表晶体，需要在最后加上lattice；C代表分子，不需要加lattice。
 参数文件：dftb_in.hsd
 优化后结构文件：sheet文件夹下的geo_opt.gen和geo_opt.xyz文件。
 运行命令 dftb+ dftb_in.hsd  
-        </div>
-          <a href="/post/dftb/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
 
-          </div>
-        
-      </section>
-
+        </div>
       
-      <section class="w-100">
-        <h1 class="f3">More</h1>
-        
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vasp_electron_phonon_coupling/" class="link black dim">
-              电声耦合强度的vasp计算
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vasp_parcharg/" class="link black dim">
-              指定能级的电子时空间分布的vasp计算
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/filezilla/" class="link black dim">
-              filezilla的使用
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/vasp_example/" class="link black dim">
-              15上的vasp计算提交示范
-            </a>
-          </h2>
-        
-
-        
-        
-          <a href="/post/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Articles</a>
-        
-        </section>
-      
-
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        October 15, 2018
       </div>
-  
+    
+    <h1 class="f3 near-black">
+      <a href="/post/vasp_electron_phonon_coupling/" class="link black dim">
+        电声耦合强度的vasp计算
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。
+eigenvectors 为行向量。
+方法是先按照eigenvector的模式来移动原子（设置最大的移动距离某一数值，例如0.05埃），然后电子步自恰迭代得到总能和能级的变化。
+INCAR参考：
+NSW=0 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=4 IBRION=-1  
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        October 13, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/vasp_parcharg/" class="link black dim">
+        指定能级的电子时空间分布的vasp计算
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。
+计算步骤： 1.结构优化计算（迟豫计算） LCHARG=T保留CHGCAR； LWAVE=T保留WAVECAR 和普通晶体结构优化无区别。
+2.计算PARCHG 利用上一步的计算，查看EIGENVAL确定要计算哪些能级的CHG，查看IBZKPT确定计算哪个Ｋ点的CHG。 INCAR_PARCHG
+system=name ENCUT=500 ISIF=2 ISTART=1 ICHARG=1 NSW=0 IBRION=-1 EDIFF=1E-5 EDIFFG=-0.01 ISMEAR=0 SIGMA=0.1 NPAR=4 LREAL=Auto LWAVE=T LCHARG=T ALGO=F IBAND=100 101 KPUSE=1 LPARD=T;LSEPB=T;LSEPK=T  IBAND: 指定能级, 在EIGENVAL中找到对应序号。
+KPUSE: 指定K点，在IBZKPT中找。
+最后一行三个参数是设置分开写PARCHG。
+得到的PARCHG文件VESTA打开即可。
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        September 11, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/filezilla/" class="link black dim">
+        filezilla的使用
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      连接服务器可以使用cmder，这里介绍本地和服务器间进行文件传输的一款软件FileZilla。
+下载地址：https://filezilla-project.org/download.php?type=server
+创建连接 点击左上角File下的图标，点击new side创建连接，如图 Host为IP，例：202.38.230.12 Port：端口号，默认22 Protocol：选择ssh协议 Logon Type：Normal User和pw输入自己账号密码 最后点击connect即可
+上传下载 上传：选中本地文件，右键upload即可；
+下载：选中云端文件右键download。
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        September 11, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/vasp_example/" class="link black dim">
+        15上的vasp计算提交示范
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来
+登录集群 windows用户推荐使用cmder软件链接服务器。下载链接：http://cmder.net/ 打开软件，在命令行操作
+ssh username@232.38.220.15  linux用户 terminal
+ssh username@232.38.220.15  ！！！！！ip改为服务器ip，这里只是示范，不是实际ip。
+bash 修改 对于新用户，使用前需要修改~/.bashrc文件 利用vim对~/.bashrc文件进行编辑，vim用法参考：https://shaobinqiu.github.io/post/vim/
+vim ~/.bashrc  删除原来内容，将下面内容替换原来的./bashrc
+# .bashrc # Source global definitions if [ -f /etc/bashrc ]; then . /etc/bashrc fi # Uncomment the following line if you don't like systemctl's auto-paging feature: # export SYSTEMD_PAGER= # User specific aliases and functions ulimit -s unlimited  保存退出后
+source ~/.bashrc  这是为了让修改立刻生效。
+开始使用vasp 15集群赝势文件所在目录：/opt/ohpc/pub/apps/vasp/pps
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        September 11, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/slurm/" class="link black dim">
+        SLURM
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
+squeue  任务状态
+PD 排队等待
+R 运行
+S 挂起
+F 失败结束
+CA 取消
+TO 超时
+NF 节点故障
+3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
+任务脚本参考 job.sh
+#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        September 6, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/vim/" class="link black dim">
+        vim
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      vim 保存编辑 进入insert mode
+按i进入插入模式后, 是从光标当前位置开始输入文件；
+按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文字；
+按o进入插入模式后，是插入新的一行，从行首开始输入文字。
+退出insert mode
+Esc  退出
+：w filename #以指定文件名保存 ：wq #保存退出 ：q！ #不保存强制退出  光标移动 按「G」：移动到文章的最后。
+按「$」：移动到光标所在行的“行尾”。
+按「^」：移动到光标所在行的“行首”。
+按「ctrl」+「b」：屏幕往“后”移动一页。
+按「ctrl」+「f」：屏幕往“前”移动一页。
+按「ctrl」+「u」：屏幕往“后”移动半页。
+按「ctrl」+「d」：屏幕往“前”移动半页。
+删除 「x 」：每按一次，删除光标所在位置的“后面”一个字符。
+「#x 」：例如，「6x」表示删除光标所在位置的“后面”6个字符。
+「dd 」：删除光标所在行。
+「#dd」：从光标所在行开始删除#行。
+「,$d」:删除当前到最后。
+「1,.d」:删除第一行到当前。
+撤销 u
+显示行号 ：set nu  小提示 习惯了按ctrl+s 保存，在用vi的时候，也习惯性的按ctrl+s，结果就是如同终端死掉了一样。
+原来：ctrl+s 终止屏幕输出（即停止回显），你敲的依然有效，只是看不见，可以ctrl+q 恢复输出。
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        September 4, 2018
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/conda/" class="link black dim">
+        conda
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       conda 1.创建环境 conda create -n name [dependent package list]  例如
+conda create -n pyyabc python=3.6  2.激活失效环境 source activate name source deactivate  3.列出环境 conda info --envs  带*为当前环境
+4.删除环境 conda remove -n name --all  
+    </div>
+  </div>
+
+        </div>
+      
+    </aside>
+    
+
+<ul class="pagination">
+    
+    <li>
+        <a href="/post/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li
+    class="disabled">
+    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    class="active"><a href="/post/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/post/page/2/">2</a></li>
+    
+    
+    <li
+    >
+    <a href="/post/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li>
+        <a href="/post/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+  </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
