@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bloch on Dao</title>
+    <link>https://shaobinqiu.github.io/tags/bloch/</link>
+    <description>Recent content in Bloch on Dao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Apr 2019 09:54:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://shaobinqiu.github.io/tags/bloch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bloch theorem</title>
+      <link>https://shaobinqiu.github.io/post/bloch_theorem/</link>
+      <pubDate>Mon, 08 Apr 2019 09:54:13 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/bloch_theorem/</guid>
+      <description>https://blog.csdn.net/u013795675/article/details/50197565</description>
+    </item>
+    
+  </channel>
+</rss>
