@@ -114,13 +114,6 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/</loc>
-    <lastmod>2019-04-04T10:54:13+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://shaobinqiu.github.io/tags/bloch/</loc>
     <lastmod>2019-04-04T10:54:13+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -156,6 +149,13 @@
   
   <url>
     <loc>https://shaobinqiu.github.io/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/</loc>
+    <lastmod>2019-04-04T10:54:13+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
