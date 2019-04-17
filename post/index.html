@@ -186,11 +186,11 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       1.优化结构 2.计算弹模 INCAR
-ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = 1e-5 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
+ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
 弹性矩阵会直接写在OUTCAR里。
 计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。
 pcell
- SYMMETRIZED ELASTIC MODULI (kBar) Direction XX YY ZZ XY YZ ZX -------------------------------------------------------------------------------- XX 10531.4122 1243.9931 1243.9931 0.0000 -0.0000 0.0000 YY 1243.9931 10531.4122 1243.9931 0.0000 0.0000 0.0000 ZZ 1243.
+ SYMMETRIZED ELASTIC MODULI (kBar) Direction XX YY ZZ XY YZ ZX -------------------------------------------------------------------------------- XX 10531.4122 1243.9931 1243.9931 0.0000 -0.0000 0.0000 YY 1243.9931 10531.4122 1243.9931 0.0000 0.0000 0.0000 ZZ 1243.9931 1243.9931 10531.4122 0.
     </div>
   </div>
 
