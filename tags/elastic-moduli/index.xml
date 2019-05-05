@@ -17,7 +17,7 @@
       <pubDate>Mon, 21 Jan 2019 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</guid>
-      <description>1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；</description>
+      <description>1.优化结构 2.计算弹模 INCAR 1 2 3 4 5 6 7 8 9 10 11 ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF</description>
     </item>
     
   </channel>

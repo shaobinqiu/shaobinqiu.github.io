@@ -17,7 +17,7 @@
       <pubDate>Tue, 11 Sep 2018 15:07:34 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/slurm/</guid>
-      <description>SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque</description>
+      <description>SLURM 1. 任务提交 1 sbatch job.sh 2. 任务查询 查看用户任务 1 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 1 scancel jobnumber #任务号可以通过s</description>
     </item>
     
   </channel>

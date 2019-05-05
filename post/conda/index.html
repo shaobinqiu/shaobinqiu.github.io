@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="conda 1.创建环境 1 conda create -n name [dependent package list] 例如 1 conda create -n pyyabc python=3.6 2.激活失效环境 1 2 source activate name source deactivate 3.列出环境 1 conda info --envs 带*为当前环境 4.删除环境 1 conda remove -n name --all" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -39,7 +39,7 @@
 
 
 <meta property="og:title" content="conda" />
-<meta property="og:description" content="conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all" />
+<meta property="og:description" content="conda 1.创建环境 1 conda create -n name [dependent package list] 例如 1 conda create -n pyyabc python=3.6 2.激活失效环境 1 2 source activate name source deactivate 3.列出环境 1 conda info --envs 带*为当前环境 4.删除环境 1 conda remove -n name --all" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shaobinqiu.github.io/post/conda/" />
 
@@ -60,19 +60,19 @@
 
 
 <meta itemprop="name" content="conda">
-<meta itemprop="description" content="conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all">
+<meta itemprop="description" content="conda 1.创建环境 1 conda create -n name [dependent package list] 例如 1 conda create -n pyyabc python=3.6 2.激活失效环境 1 2 source activate name source deactivate 3.列出环境 1 conda info --envs 带*为当前环境 4.删除环境 1 conda remove -n name --all">
 
 
 <meta itemprop="datePublished" content="2018-09-04T09:54:13&#43;08:00" />
 <meta itemprop="dateModified" content="2018-09-04T09:54:13&#43;08:00" />
-<meta itemprop="wordCount" content="61">
+<meta itemprop="wordCount" content="67">
 
 
 
 <meta itemprop="keywords" content="linux,conda," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="conda"/>
-<meta name="twitter:description" content="conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all"/>
+<meta name="twitter:description" content="conda 1.创建环境 1 conda create -n name [dependent package list] 例如 1 conda create -n pyyabc python=3.6 2.激活失效环境 1 2 source activate name source deactivate 3.列出环境 1 conda info --envs 带*为当前环境 4.删除环境 1 conda remove -n name --all"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -172,33 +172,54 @@
 <h1 id="conda">conda</h1>
 
 <h2 id="1-创建环境">1.创建环境</h2>
-
-<pre><code>conda create -n name [dependent package list]
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"><span class="nx">conda</span> <span class="nx">create</span> <span class="o">-</span><span class="nx">n</span> <span class="nx">name</span> <span class="p">[</span><span class="nx">dependent</span> <span class="kn">package</span> <span class="nx">list</span><span class="p">]</span></pre></td></tr></table>
+</div>
+</div>
 <p>例如</p>
-
-<pre><code>conda create -n pyyabc python=3.6
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">conda create -n pyyabc python=3.6</pre></td></tr></table>
+</div>
+</div>
 <h2 id="2-激活失效环境">2.激活失效环境</h2>
-
-<pre><code>source activate name
-source deactivate
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">source activate name
+source deactivate</pre></td></tr></table>
+</div>
+</div>
 <h2 id="3-列出环境">3.列出环境</h2>
-
-<pre><code>conda info --envs
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">conda info --envs</pre></td></tr></table>
+</div>
+</div>
 <p>带*为当前环境</p>
 
 <h2 id="4-删除环境">4.删除环境</h2>
-
-<pre><code>conda remove -n name --all
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">conda remove -n name --all</pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -245,20 +266,24 @@ source deactivate
 </div>
 
 <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
   <span class="theme-info">
     Theme - 
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+  <span class="division">|</span>
+  <span class="friend">
+    <a class="theme-link" href="https://changchunhe.github.io/">Hecc</a>
+  </span>
+  <span class="division">|</span>
+  <span class="friend">
+    <a class="theme-link" href="http://morty.tech/">Jason</a>
   </span>
 
   
 
   <span class="copyright-year">
     &copy; 
-    2017 - 
+    2018 - 
     2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>

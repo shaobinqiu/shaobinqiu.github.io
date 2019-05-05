@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="SLURM 1. 任务提交 1 sbatch job.sh 2. 任务查询 查看用户任务 1 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 1 scancel jobnumber #任务号可以通过s" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -39,7 +39,7 @@
 
 
 <meta property="og:title" content="SLURM" />
-<meta property="og:description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque" />
+<meta property="og:description" content="SLURM 1. 任务提交 1 sbatch job.sh 2. 任务查询 查看用户任务 1 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 1 scancel jobnumber #任务号可以通过s" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shaobinqiu.github.io/post/slurm/" />
 
@@ -60,19 +60,19 @@
 
 
 <meta itemprop="name" content="SLURM">
-<meta itemprop="description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque">
+<meta itemprop="description" content="SLURM 1. 任务提交 1 sbatch job.sh 2. 任务查询 查看用户任务 1 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 1 scancel jobnumber #任务号可以通过s">
 
 
 <meta itemprop="datePublished" content="2018-09-11T15:07:34&#43;08:00" />
 <meta itemprop="dateModified" content="2018-09-11T15:07:34&#43;08:00" />
-<meta itemprop="wordCount" content="159">
+<meta itemprop="wordCount" content="179">
 
 
 
 <meta itemprop="keywords" content="linux,SLURM," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SLURM"/>
-<meta name="twitter:description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque"/>
+<meta name="twitter:description" content="SLURM 1. 任务提交 1 sbatch job.sh 2. 任务查询 查看用户任务 1 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 1 scancel jobnumber #任务号可以通过s"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -173,17 +173,25 @@
 <h1 id="slurm">SLURM</h1>
 
 <h2 id="1-任务提交">1. 任务提交</h2>
-
-<pre><code>sbatch job.sh
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">sbatch job.sh</pre></td></tr></table>
+</div>
+</div>
 <h2 id="2-任务查询">2. 任务查询</h2>
 
 <p>查看用户任务</p>
-
-<pre><code>squeue
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">squeue</pre></td></tr></table>
+</div>
+</div>
 <p>任务状态</p>
 
 <p>PD    排队等待</p>
@@ -201,39 +209,66 @@
 <p>NF    节点故障</p>
 
 <h2 id="3-任务删除">3. 任务删除</h2>
-
-<pre><code>scancel jobnumber #任务号可以通过squeue看到
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">scancel jobnumber #任务号可以通过squeue看到</pre></td></tr></table>
+</div>
+</div>
 <h2 id="4-查看计算资源">4. 查看计算资源</h2>
-
-<pre><code>sinfo
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">sinfo</pre></td></tr></table>
+</div>
+</div>
 <p>分区和时间上限都可以看到</p>
 
 <h1 id="任务脚本参考">任务脚本参考</h1>
 
 <p>job.sh</p>
-
-<pre><code>#!/bin/bash -l
-# NOTE the -l flag!
-#
-#SBATCH -J NAME
-# Default in slurm
-# Request 5 hours run time
-#SBATCH -t 5:0:0
-#
-#SBATCH -p small -N 1 -n 12
-# NOTE Each small node has 12 cores
-#
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"><span class="cp">#!/bin/bash -l
+</span><span class="cp"></span><span class="c1"># NOTE the -l flag!
+</span><span class="c1">#
+</span><span class="c1">#SBATCH -J NAME
+</span><span class="c1"># Default in slurm
+</span><span class="c1"># Request 5 hours run time
+</span><span class="c1">#SBATCH -t 5:0:0
+</span><span class="c1">#
+</span><span class="c1">#SBATCH -p small -N 1 -n 12
+</span><span class="c1"># NOTE Each small node has 12 cores
+</span><span class="c1">#
+</span><span class="c1"></span>
 module load vasp/5.4.4-impi-mkl
 
-# add your job logical here!!!
-mpirun -n 12 vasp_std       
-</code></pre>
-
+<span class="c1"># add your job logical here!!!
+</span><span class="c1"></span>mpirun -n <span class="m">12</span> vasp_std       </pre></td></tr></table>
+</div>
+</div>
 <p>more SLURM:</p>
 
 <p><a href="https://research.computing.yale.edu/support/hpc/user-guide/slurm">https://research.computing.yale.edu/support/hpc/user-guide/slurm</a></p>
@@ -286,20 +321,24 @@ mpirun -n 12 vasp_std
 </div>
 
 <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
   <span class="theme-info">
     Theme - 
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+  <span class="division">|</span>
+  <span class="friend">
+    <a class="theme-link" href="https://changchunhe.github.io/">Hecc</a>
+  </span>
+  <span class="division">|</span>
+  <span class="friend">
+    <a class="theme-link" href="http://morty.tech/">Jason</a>
   </span>
 
   
 
   <span class="copyright-year">
     &copy; 
-    2017 - 
+    2018 - 
     2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
