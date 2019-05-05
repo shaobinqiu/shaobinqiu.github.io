@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vasp on Dao</title>
+    <title>Vasp on Daozhang</title>
     <link>https://shaobinqiu.github.io/tags/vasp/</link>
-    <description>Recent content in Vasp on Dao</description>
+    <description>Recent content in Vasp on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 21 Jan 2019 01:37:56 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/tags/vasp/index.xml" rel="self" type="application/rss+xml" />
@@ -17,10 +17,7 @@
       <pubDate>Mon, 21 Jan 2019 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</guid>
-      <description>1.优化结构 2.计算弹模 INCAR
-ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
-不能设置NPAR， 不然会报错：
-ERROR | VASP internal routines have requested a change of the k-point set. | | Unfortunately this is only possible if NPAR=number of nodes. | | Please remove the tag NPAR from the INCAR file and restart the | | calculations.</description>
+      <description>1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；</description>
     </item>
     
     <item>
@@ -29,11 +26,7 @@ ERROR | VASP internal routines have requested a change of the k-point set. | | U
       <pubDate>Mon, 15 Oct 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/</guid>
-      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。
-eigenvectors 为行向量。
-方法是先按照eigenvector的模式来移动原子（设置最大的移动距离某一数值，例如0.05埃），然后电子步自恰迭代得到总能和能级的变化。
-INCAR参考：
-NSW=0 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=4 IBRION=-1  </description>
+      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors</description>
     </item>
     
     <item>
@@ -42,13 +35,7 @@ NSW=0 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=4 IBRION=-1  <
       <pubDate>Sat, 13 Oct 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_parcharg/</guid>
-      <description>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。
-计算步骤： 1.结构优化计算（迟豫计算） LCHARG=T保留CHGCAR； LWAVE=T保留WAVECAR 和普通晶体结构优化无区别。
-2.计算PARCHG 利用上一步的计算，查看EIGENVAL确定要计算哪些能级的CHG，查看IBZKPT确定计算哪个Ｋ点的CHG。 INCAR_PARCHG
-system=name ENCUT=500 ISIF=2 ISTART=1 ICHARG=1 NSW=0 IBRION=-1 EDIFF=1E-5 EDIFFG=-0.01 ISMEAR=0 SIGMA=0.1 NPAR=4 LREAL=Auto LWAVE=T LCHARG=T ALGO=F IBAND=100 101 KPUSE=1 LPARD=T;LSEPB=T;LSEPK=T  IBAND: 指定能级, 在EIGENVAL中找到对应序号。
-KPUSE: 指定K点，在IBZKPT中找。
-最后一行三个参数是设置分开写PARCHG。
-得到的PARCHG文件VESTA打开即可。</description>
+      <description>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化</description>
     </item>
     
     <item>
@@ -57,15 +44,7 @@ KPUSE: 指定K点，在IBZKPT中找。
       <pubDate>Tue, 11 Sep 2018 18:03:09 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_example/</guid>
-      <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来
-登录集群 windows用户推荐使用cmder软件链接服务器。下载链接：http://cmder.net/ 打开软件，在命令行操作
-ssh username@232.38.220.15  linux用户 terminal
-ssh username@232.38.220.15  ！！！！！ip改为服务器ip，这里只是示范，不是实际ip。
-bash 修改 对于新用户，使用前需要修改~/.bashrc文件 利用vim对~/.bashrc文件进行编辑，vim用法参考：https://shaobinqiu.github.io/post/vim/
-vim ~/.bashrc  删除原来内容，将下面内容替换原来的./bashrc
-# .bashrc # Source global definitions if [ -f /etc/bashrc ]; then . /etc/bashrc fi # Uncomment the following line if you don&#39;t like systemctl&#39;s auto-paging feature: # export SYSTEMD_PAGER= # User specific aliases and functions ulimit -s unlimited  保存退出后
-source ~/.bashrc  这是为了让修改立刻生效。
-开始使用vasp 15集群赝势文件所在目录：/opt/ohpc/pub/apps/vasp/pps</description>
+      <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win</description>
     </item>
     
     <item>
@@ -74,9 +53,7 @@ source ~/.bashrc  这是为了让修改立刻生效。
       <pubDate>Wed, 08 Aug 2018 17:06:55 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_scripts/</guid>
-      <description>一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有)
-for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;energy done  $AveP = \sum$
-2.截断能测试 rm summary for i in 250 300 350 400 450 500 550 600 650 do cat&amp;gt;INCAR&amp;lt;&amp;lt;! SYSTEM=Al13 NSW=0 ENCUT=$i ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=2 ISIF=2 ISPIN=2 IBRION=-1 ! mpirun -n 12 vasp_std E=`tail -1 OSZICAR` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;summary mv OSZICAR OSZICAR-$i mv CONTCAR CONTCAR-$i rm WAVECAR DOSCAR done  3.</description>
+      <description>一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有) for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;energy done $AveP = \sum$ 2.截断能测试 rm summary for i in 250 300 350</description>
     </item>
     
     <item>
@@ -85,17 +62,7 @@ for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;q
       <pubDate>Tue, 31 Jul 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/</guid>
-      <description>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计算团簇是加真空层把团簇当做晶体计算，故其计算结果是3N个转动频率，若结构优化比较好（稳定），会出现6个接近零的频率（或实或虚）。（许多情况下可当做零处理）
-计算步骤： 1.结构优化计算（迟豫计算） INCAR_R
-SYSTEM=name NSW=200 ENCUT=400 ISMEAR=0 EDIFFG=-0.02 EDIFF=1e-06 NPAR=2 ISIF=2 ISTART=0 IBRION=2  和普通晶体结构优化无区别。
-2.计算频率 利用上一步得到的优化后的结构CAONTCAR当做这一步的POSCAR计算频率 INCAR_V
-SYSTEM=name NSW=300 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LCHARG=F LWAVE=F LREAL=F EDIFF=1e-06 #NPAR=2 ISIF=2 IBRION=5 NFREE=2 POTIM=0.02  最主要差别在于后三个参数设置，详情参照vasp manual。
-注意，NSW的值必须大于3Ｎ*NFREE＋１(+-dx dy dz)！！！
-NPAR必须是默认等于核数（不设置）；ENCUT要测试；LREAL可根据情况设为Auto。
-！！！真空层大小要慎重，计算速度差距很大。
-其他： KPOINTS统一使用gamma点
-Automatic mesh 0 Gamma 1 1 1 0 0 0  任务文件参考
-申请计算资源的命令 for i in {3..25} do cp INCAR_R INCAR cp POSCAR-$i POSCAR mpirun -np ${NSLOTS} vasp5.</description>
+      <description>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计</description>
     </item>
     
   </channel>

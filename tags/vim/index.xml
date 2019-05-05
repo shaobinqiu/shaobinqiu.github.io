@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vim on Dao</title>
+    <title>Vim on Daozhang</title>
     <link>https://shaobinqiu.github.io/tags/vim/</link>
-    <description>Recent content in Vim on Dao</description>
+    <description>Recent content in Vim on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Thu, 06 Sep 2018 09:54:13 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
@@ -17,28 +17,7 @@
       <pubDate>Thu, 06 Sep 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vim/</guid>
-      <description>vim 保存编辑 进入insert mode
-按i进入插入模式后, 是从光标当前位置开始输入文件；
-按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文字；
-按o进入插入模式后，是插入新的一行，从行首开始输入文字。
-退出insert mode
-Esc  退出
-：w filename #以指定文件名保存 ：wq #保存退出 ：q！ #不保存强制退出  光标移动 按「G」：移动到文章的最后。
-按「$」：移动到光标所在行的“行尾”。
-按「^」：移动到光标所在行的“行首”。
-按「ctrl」+「b」：屏幕往“后”移动一页。
-按「ctrl」+「f」：屏幕往“前”移动一页。
-按「ctrl」+「u」：屏幕往“后”移动半页。
-按「ctrl」+「d」：屏幕往“前”移动半页。
-删除 「x 」：每按一次，删除光标所在位置的“后面”一个字符。
-「#x 」：例如，「6x」表示删除光标所在位置的“后面”6个字符。
-「dd 」：删除光标所在行。
-「#dd」：从光标所在行开始删除#行。
-「,$d」:删除当前到最后。
-「1,.d」:删除第一行到当前。
-撤销 u
-显示行号 ：set nu  小提示 习惯了按ctrl+s 保存，在用vi的时候，也习惯性的按ctrl+s，结果就是如同终端死掉了一样。
-原来：ctrl+s 终止屏幕输出（即停止回显），你敲的依然有效，只是看不见，可以ctrl+q 恢复输出。</description>
+      <description>vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文</description>
     </item>
     
   </channel>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on Dao</title>
+    <title>Linux on Daozhang</title>
     <link>https://shaobinqiu.github.io/tags/linux/</link>
-    <description>Recent content in Linux on Dao</description>
+    <description>Recent content in Linux on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 11 Sep 2018 15:07:34 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
@@ -17,18 +17,7 @@
       <pubDate>Tue, 11 Sep 2018 15:07:34 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/slurm/</guid>
-      <description>SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
-squeue  任务状态
-PD 排队等待
-R 运行
-S 挂起
-F 失败结束
-CA 取消
-TO 超时
-NF 节点故障
-3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
-任务脚本参考 job.sh
-#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5.</description>
+      <description>SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque</description>
     </item>
     
     <item>
@@ -37,28 +26,7 @@ NF 节点故障
       <pubDate>Thu, 06 Sep 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vim/</guid>
-      <description>vim 保存编辑 进入insert mode
-按i进入插入模式后, 是从光标当前位置开始输入文件；
-按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文字；
-按o进入插入模式后，是插入新的一行，从行首开始输入文字。
-退出insert mode
-Esc  退出
-：w filename #以指定文件名保存 ：wq #保存退出 ：q！ #不保存强制退出  光标移动 按「G」：移动到文章的最后。
-按「$」：移动到光标所在行的“行尾”。
-按「^」：移动到光标所在行的“行首”。
-按「ctrl」+「b」：屏幕往“后”移动一页。
-按「ctrl」+「f」：屏幕往“前”移动一页。
-按「ctrl」+「u」：屏幕往“后”移动半页。
-按「ctrl」+「d」：屏幕往“前”移动半页。
-删除 「x 」：每按一次，删除光标所在位置的“后面”一个字符。
-「#x 」：例如，「6x」表示删除光标所在位置的“后面”6个字符。
-「dd 」：删除光标所在行。
-「#dd」：从光标所在行开始删除#行。
-「,$d」:删除当前到最后。
-「1,.d」:删除第一行到当前。
-撤销 u
-显示行号 ：set nu  小提示 习惯了按ctrl+s 保存，在用vi的时候，也习惯性的按ctrl+s，结果就是如同终端死掉了一样。
-原来：ctrl+s 终止屏幕输出（即停止回显），你敲的依然有效，只是看不见，可以ctrl+q 恢复输出。</description>
+      <description>vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文</description>
     </item>
     
     <item>
@@ -67,9 +35,7 @@ Esc  退出
       <pubDate>Tue, 04 Sep 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/conda/</guid>
-      <description> conda 1.创建环境 conda create -n name [dependent package list]  例如
-conda create -n pyyabc python=3.6  2.激活失效环境 source activate name source deactivate  3.列出环境 conda info --envs  带*为当前环境
-4.删除环境 conda remove -n name --all  </description>
+      <description>conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all</description>
     </item>
     
     <item>
@@ -78,12 +44,7 @@ conda create -n pyyabc python=3.6  2.激活失效环境 source activate name sou
       <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
-      <description> linux简单命令 cp 多个文件文件：
-cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/  cp 拥有共同前缀文件:
-cp /home/usr/dir/file{1..4} ./  查看可导入模块：
-module avail  导入模块：
-module load modulename  查看已导入模块：
-module list  </description>
+      <description>linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list</description>
     </item>
     
   </channel>

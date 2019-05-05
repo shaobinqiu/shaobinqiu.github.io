@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elastic Moduli on Dao</title>
+    <title>“elastic moduli” on Daozhang</title>
     <link>https://shaobinqiu.github.io/tags/elastic-moduli/</link>
-    <description>Recent content in Elastic Moduli on Dao</description>
+    <description>Recent content in “elastic moduli” on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 21 Jan 2019 01:37:56 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/tags/elastic-moduli/index.xml" rel="self" type="application/rss+xml" />
@@ -17,10 +17,7 @@
       <pubDate>Mon, 21 Jan 2019 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</guid>
-      <description>1.优化结构 2.计算弹模 INCAR
-ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
-不能设置NPAR， 不然会报错：
-ERROR | VASP internal routines have requested a change of the k-point set. | | Unfortunately this is only possible if NPAR=number of nodes. | | Please remove the tag NPAR from the INCAR file and restart the | | calculations.</description>
+      <description>1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；</description>
     </item>
     
   </channel>

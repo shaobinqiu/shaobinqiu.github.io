@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Filezilla on Dao</title>
+    <title>“filezilla” on Daozhang</title>
     <link>https://shaobinqiu.github.io/categories/filezilla/</link>
-    <description>Recent content in Filezilla on Dao</description>
+    <description>Recent content in “filezilla” on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 11 Sep 2018 20:03:09 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/categories/filezilla/index.xml" rel="self" type="application/rss+xml" />
@@ -17,11 +17,7 @@
       <pubDate>Tue, 11 Sep 2018 20:03:09 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/filezilla/</guid>
-      <description>连接服务器可以使用cmder，这里介绍本地和服务器间进行文件传输的一款软件FileZilla。
-下载地址：https://filezilla-project.org/download.php?type=server
-创建连接 点击左上角File下的图标，点击new side创建连接，如图 Host为IP，例：202.38.230.12 Port：端口号，默认22 Protocol：选择ssh协议 Logon Type：Normal User和pw输入自己账号密码 最后点击connect即可
-上传下载 上传：选中本地文件，右键upload即可；
-下载：选中云端文件右键download。</description>
+      <description>连接服务器可以使用cmder，这里介绍本地和服务器间进行文件传输的一款软件FileZilla。 下载地址：https://filezilla-</description>
     </item>
     
   </channel>

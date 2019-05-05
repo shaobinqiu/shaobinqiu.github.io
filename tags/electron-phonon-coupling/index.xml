@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Electron Phonon Coupling on Dao</title>
+    <title>“electron-phonon coupling” on Daozhang</title>
     <link>https://shaobinqiu.github.io/tags/electron-phonon-coupling/</link>
-    <description>Recent content in Electron Phonon Coupling on Dao</description>
+    <description>Recent content in “electron-phonon coupling” on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 15 Oct 2018 01:37:56 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/tags/electron-phonon-coupling/index.xml" rel="self" type="application/rss+xml" />
@@ -17,11 +17,7 @@
       <pubDate>Mon, 15 Oct 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/</guid>
-      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。
-eigenvectors 为行向量。
-方法是先按照eigenvector的模式来移动原子（设置最大的移动距离某一数值，例如0.05埃），然后电子步自恰迭代得到总能和能级的变化。
-INCAR参考：
-NSW=0 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=4 IBRION=-1  </description>
+      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors</description>
     </item>
     
   </channel>

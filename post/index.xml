@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Dao</title>
+    <title>Posts on Daozhang</title>
     <link>https://shaobinqiu.github.io/post/</link>
-    <description>Recent content in Articles on Dao</description>
+    <description>Recent content in Posts on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Aug 2017 18:03:09 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Theme preview</title>
+      <link>https://shaobinqiu.github.io/post/even-preview/</link>
+      <pubDate>Wed, 23 Aug 2017 18:03:09 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/even-preview/</guid>
+      <description>Copy from 《Hugo 主题 Nuo 文章样式预览》 这篇文章集中说明主题所支持的 Markdown 语法和 Hugo Shortcodes 插件，你也可以在这里预览到他们的样子。如果你不喜欢某些样式，可以去</description>
+    </item>
     
     <item>
       <title>Bloch theorem</title>
@@ -26,10 +35,7 @@
       <pubDate>Mon, 21 Jan 2019 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</guid>
-      <description>1.优化结构 2.计算弹模 INCAR
-ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001  关键参数: 将IBRION=6；ISIF=3；NFREE=4；
-不能设置NPAR， 不然会报错：
-ERROR | VASP internal routines have requested a change of the k-point set. | | Unfortunately this is only possible if NPAR=number of nodes. | | Please remove the tag NPAR from the INCAR file and restart the | | calculations.</description>
+      <description>1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；</description>
     </item>
     
     <item>
@@ -38,12 +44,7 @@ ERROR | VASP internal routines have requested a change of the k-point set. | | U
       <pubDate>Sat, 10 Nov 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/dftb/</guid>
-      <description> NFTB+: http://www.dftbplus.org/
-案例文件：https://github.com/shaobinqiu/dftb_example
-dftb简单说明 结构文件：sheet文件夹下的geo_start.gen文件。 第一行第一个数值为原子数目 后面字符S代表晶体，需要在最后加上lattice；C代表分子，不需要加lattice。
-参数文件：dftb_in.hsd
-优化后结构文件：sheet文件夹下的geo_opt.gen和geo_opt.xyz文件。
-运行命令 dftb+ dftb_in.hsd  </description>
+      <description>NFTB+: http://www.dftbplus.org/ 案例文件：https://github.com/shaobinqiu/dftb_example dftb简单说明 结构文件：sheet文件夹</description>
     </item>
     
     <item>
@@ -52,11 +53,7 @@ dftb简单说明 结构文件：sheet文件夹下的geo_start.gen文件。 第�
       <pubDate>Mon, 15 Oct 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/</guid>
-      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。
-eigenvectors 为行向量。
-方法是先按照eigenvector的模式来移动原子（设置最大的移动距离某一数值，例如0.05埃），然后电子步自恰迭代得到总能和能级的变化。
-INCAR参考：
-NSW=0 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=4 IBRION=-1  </description>
+      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors</description>
     </item>
     
     <item>
@@ -65,13 +62,7 @@ NSW=0 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=4 IBRION=-1  <
       <pubDate>Sat, 13 Oct 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_parcharg/</guid>
-      <description>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。
-计算步骤： 1.结构优化计算（迟豫计算） LCHARG=T保留CHGCAR； LWAVE=T保留WAVECAR 和普通晶体结构优化无区别。
-2.计算PARCHG 利用上一步的计算，查看EIGENVAL确定要计算哪些能级的CHG，查看IBZKPT确定计算哪个Ｋ点的CHG。 INCAR_PARCHG
-system=name ENCUT=500 ISIF=2 ISTART=1 ICHARG=1 NSW=0 IBRION=-1 EDIFF=1E-5 EDIFFG=-0.01 ISMEAR=0 SIGMA=0.1 NPAR=4 LREAL=Auto LWAVE=T LCHARG=T ALGO=F IBAND=100 101 KPUSE=1 LPARD=T;LSEPB=T;LSEPK=T  IBAND: 指定能级, 在EIGENVAL中找到对应序号。
-KPUSE: 指定K点，在IBZKPT中找。
-最后一行三个参数是设置分开写PARCHG。
-得到的PARCHG文件VESTA打开即可。</description>
+      <description>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化</description>
     </item>
     
     <item>
@@ -80,11 +71,7 @@ KPUSE: 指定K点，在IBZKPT中找。
       <pubDate>Tue, 11 Sep 2018 20:03:09 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/filezilla/</guid>
-      <description>连接服务器可以使用cmder，这里介绍本地和服务器间进行文件传输的一款软件FileZilla。
-下载地址：https://filezilla-project.org/download.php?type=server
-创建连接 点击左上角File下的图标，点击new side创建连接，如图 Host为IP，例：202.38.230.12 Port：端口号，默认22 Protocol：选择ssh协议 Logon Type：Normal User和pw输入自己账号密码 最后点击connect即可
-上传下载 上传：选中本地文件，右键upload即可；
-下载：选中云端文件右键download。</description>
+      <description>连接服务器可以使用cmder，这里介绍本地和服务器间进行文件传输的一款软件FileZilla。 下载地址：https://filezilla-</description>
     </item>
     
     <item>
@@ -93,15 +80,7 @@ KPUSE: 指定K点，在IBZKPT中找。
       <pubDate>Tue, 11 Sep 2018 18:03:09 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_example/</guid>
-      <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来
-登录集群 windows用户推荐使用cmder软件链接服务器。下载链接：http://cmder.net/ 打开软件，在命令行操作
-ssh username@232.38.220.15  linux用户 terminal
-ssh username@232.38.220.15  ！！！！！ip改为服务器ip，这里只是示范，不是实际ip。
-bash 修改 对于新用户，使用前需要修改~/.bashrc文件 利用vim对~/.bashrc文件进行编辑，vim用法参考：https://shaobinqiu.github.io/post/vim/
-vim ~/.bashrc  删除原来内容，将下面内容替换原来的./bashrc
-# .bashrc # Source global definitions if [ -f /etc/bashrc ]; then . /etc/bashrc fi # Uncomment the following line if you don&#39;t like systemctl&#39;s auto-paging feature: # export SYSTEMD_PAGER= # User specific aliases and functions ulimit -s unlimited  保存退出后
-source ~/.bashrc  这是为了让修改立刻生效。
-开始使用vasp 15集群赝势文件所在目录：/opt/ohpc/pub/apps/vasp/pps</description>
+      <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win</description>
     </item>
     
     <item>
@@ -110,18 +89,7 @@ source ~/.bashrc  这是为了让修改立刻生效。
       <pubDate>Tue, 11 Sep 2018 15:07:34 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/slurm/</guid>
-      <description>SLURM 1. 任务提交 sbatch job.sh  2. 任务查询 查看用户任务
-squeue  任务状态
-PD 排队等待
-R 运行
-S 挂起
-F 失败结束
-CA 取消
-TO 超时
-NF 节点故障
-3. 任务删除 scancel jobnumber #任务号可以通过squeue看到  4. 查看计算资源 sinfo  分区和时间上限都可以看到
-任务脚本参考 job.sh
-#!/bin/bash -l # NOTE the -l flag! # #SBATCH -J NAME # Default in slurm # Request 5 hours run time #SBATCH -t 5:0:0 # #SBATCH -p small -N 1 -n 12 # NOTE Each small node has 12 cores # module load vasp/5.</description>
+      <description>SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque</description>
     </item>
     
     <item>
@@ -130,28 +98,7 @@ NF 节点故障
       <pubDate>Thu, 06 Sep 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vim/</guid>
-      <description>vim 保存编辑 进入insert mode
-按i进入插入模式后, 是从光标当前位置开始输入文件；
-按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文字；
-按o进入插入模式后，是插入新的一行，从行首开始输入文字。
-退出insert mode
-Esc  退出
-：w filename #以指定文件名保存 ：wq #保存退出 ：q！ #不保存强制退出  光标移动 按「G」：移动到文章的最后。
-按「$」：移动到光标所在行的“行尾”。
-按「^」：移动到光标所在行的“行首”。
-按「ctrl」+「b」：屏幕往“后”移动一页。
-按「ctrl」+「f」：屏幕往“前”移动一页。
-按「ctrl」+「u」：屏幕往“后”移动半页。
-按「ctrl」+「d」：屏幕往“前”移动半页。
-删除 「x 」：每按一次，删除光标所在位置的“后面”一个字符。
-「#x 」：例如，「6x」表示删除光标所在位置的“后面”6个字符。
-「dd 」：删除光标所在行。
-「#dd」：从光标所在行开始删除#行。
-「,$d」:删除当前到最后。
-「1,.d」:删除第一行到当前。
-撤销 u
-显示行号 ：set nu  小提示 习惯了按ctrl+s 保存，在用vi的时候，也习惯性的按ctrl+s，结果就是如同终端死掉了一样。
-原来：ctrl+s 终止屏幕输出（即停止回显），你敲的依然有效，只是看不见，可以ctrl+q 恢复输出。</description>
+      <description>vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文</description>
     </item>
     
     <item>
@@ -160,9 +107,7 @@ Esc  退出
       <pubDate>Tue, 04 Sep 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/conda/</guid>
-      <description> conda 1.创建环境 conda create -n name [dependent package list]  例如
-conda create -n pyyabc python=3.6  2.激活失效环境 source activate name source deactivate  3.列出环境 conda info --envs  带*为当前环境
-4.删除环境 conda remove -n name --all  </description>
+      <description>conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all</description>
     </item>
     
     <item>
@@ -171,9 +116,7 @@ conda create -n pyyabc python=3.6  2.激活失效环境 source activate name sou
       <pubDate>Wed, 08 Aug 2018 17:06:55 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_scripts/</guid>
-      <description>一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有)
-for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;energy done  $AveP = \sum$
-2.截断能测试 rm summary for i in 250 300 350 400 450 500 550 600 650 do cat&amp;gt;INCAR&amp;lt;&amp;lt;! SYSTEM=Al13 NSW=0 ENCUT=$i ISMEAR=0 EDIFFG=-0.01 LREAL=Auto EDIFF=1e-06 NPAR=2 ISIF=2 ISPIN=2 IBRION=-1 ! mpirun -n 12 vasp_std E=`tail -1 OSZICAR` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;summary mv OSZICAR OSZICAR-$i mv CONTCAR CONTCAR-$i rm WAVECAR DOSCAR done  3.</description>
+      <description>一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有) for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;energy done $AveP = \sum$ 2.截断能测试 rm summary for i in 250 300 350</description>
     </item>
     
     <item>
@@ -182,12 +125,7 @@ for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;q
       <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
-      <description> linux简单命令 cp 多个文件文件：
-cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/  cp 拥有共同前缀文件:
-cp /home/usr/dir/file{1..4} ./  查看可导入模块：
-module avail  导入模块：
-module load modulename  查看已导入模块：
-module list  </description>
+      <description>linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list</description>
     </item>
     
     <item>
@@ -196,17 +134,135 @@ module list  </description>
       <pubDate>Tue, 31 Jul 2018 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/</guid>
-      <description>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计算团簇是加真空层把团簇当做晶体计算，故其计算结果是3N个转动频率，若结构优化比较好（稳定），会出现6个接近零的频率（或实或虚）。（许多情况下可当做零处理）
-计算步骤： 1.结构优化计算（迟豫计算） INCAR_R
-SYSTEM=name NSW=200 ENCUT=400 ISMEAR=0 EDIFFG=-0.02 EDIFF=1e-06 NPAR=2 ISIF=2 ISTART=0 IBRION=2  和普通晶体结构优化无区别。
-2.计算频率 利用上一步得到的优化后的结构CAONTCAR当做这一步的POSCAR计算频率 INCAR_V
-SYSTEM=name NSW=300 ENCUT=400 ISMEAR=0 EDIFFG=-0.01 LCHARG=F LWAVE=F LREAL=F EDIFF=1e-06 #NPAR=2 ISIF=2 IBRION=5 NFREE=2 POTIM=0.02  最主要差别在于后三个参数设置，详情参照vasp manual。
-注意，NSW的值必须大于3Ｎ*NFREE＋１(+-dx dy dz)！！！
-NPAR必须是默认等于核数（不设置）；ENCUT要测试；LREAL可根据情况设为Auto。
-！！！真空层大小要慎重，计算速度差距很大。
-其他： KPOINTS统一使用gamma点
-Automatic mesh 0 Gamma 1 1 1 0 0 0  任务文件参考
-申请计算资源的命令 for i in {3..25} do cp INCAR_R INCAR cp POSCAR-$i POSCAR mpirun -np ${NSLOTS} vasp5.</description>
+      <description>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计</description>
+    </item>
+    
+    <item>
+      <title>This is a hidden post.</title>
+      <link>https://shaobinqiu.github.io/post/hidden-post/</link>
+      <pubDate>Thu, 08 Mar 2018 17:40:19 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/hidden-post/</guid>
+      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[English] Creating a New Theme</title>
+      <link>https://shaobinqiu.github.io/post/english-preview/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/english-preview/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>[日本語] 敬語体系</title>
+      <link>https://shaobinqiu.github.io/post/japanese-preview/</link>
+      <pubDate>Wed, 30 Aug 2017 01:53:34 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/japanese-preview/</guid>
+      <description>日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに</description>
+    </item>
+    
+    <item>
+      <title>[中文] 《长恨歌》</title>
+      <link>https://shaobinqiu.github.io/post/chinese-preview/</link>
+      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/chinese-preview/</guid>
+      <description>《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://shaobinqiu.github.io/post/shortcodes/</link>
+      <pubDate>Tue, 30 Aug 2016 16:01:23 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/shortcodes/</guid>
+      <description>&lt;h1 id=&#34;center-right-left&#34;&gt;center, right, left&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;## default
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+
+{{% center %}}
+## center
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+{{% /center %}}
+
+{{% right %}}
+## right
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+{{% /right %}}
+
+{{% left %}}
+## left
+![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+{{% /left %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS Flowchart Diagrams</title>
+      <link>https://shaobinqiu.github.io/post/js-flowchart-diagrams/</link>
+      <pubDate>Wed, 04 Mar 2015 21:57:50 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/js-flowchart-diagrams/</guid>
+      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-flowchart&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
+e=&amp;gt;end: End:&amp;gt;http://www.google.com
+op1=&amp;gt;operation: My Operation|past
+op2=&amp;gt;operation: Stuff|current
+sub1=&amp;gt;subroutine: My Subroutine|invalid
+cond=&amp;gt;condition: Yes
+or No?|approved:&amp;gt;http://www.google.com
+c2=&amp;gt;condition: Good idea|rejected
+io=&amp;gt;inputoutput: catch something...|request
+
+st-&amp;gt;op1(right)-&amp;gt;cond
+cond(yes, right)-&amp;gt;c2
+cond(no)-&amp;gt;sub1(left)-&amp;gt;op1
+c2(yes)-&amp;gt;io-&amp;gt;e
+c2(no)-&amp;gt;op2-&amp;gt;e
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS Sequence Diagrams</title>
+      <link>https://shaobinqiu.github.io/post/js-sequence-diagrams/</link>
+      <pubDate>Wed, 04 Mar 2015 21:57:45 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/js-sequence-diagrams/</guid>
+      <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sequence&#34;&gt;Andrew-&amp;gt;China: Says Hello
+Note right of China: China thinks\nabout it
+China--&amp;gt;Andrew: How are you?
+Andrew-&amp;gt;&amp;gt;China: I am good thanks!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://shaobinqiu.github.io/post/syntax-highlighting/</link>
+      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/syntax-highlighting/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
+  alert(&amp;quot;Hello, World!&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

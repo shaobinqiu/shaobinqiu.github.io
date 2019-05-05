@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>15 on Dao</title>
+    <title>15 on Daozhang</title>
     <link>https://shaobinqiu.github.io/tags/15/</link>
-    <description>Recent content in 15 on Dao</description>
+    <description>Recent content in 15 on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Tue, 11 Sep 2018 18:03:09 +0800</lastBuildDate>
     
 	<atom:link href="https://shaobinqiu.github.io/tags/15/index.xml" rel="self" type="application/rss+xml" />
@@ -17,15 +17,7 @@
       <pubDate>Tue, 11 Sep 2018 18:03:09 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_example/</guid>
-      <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来
-登录集群 windows用户推荐使用cmder软件链接服务器。下载链接：http://cmder.net/ 打开软件，在命令行操作
-ssh username@232.38.220.15  linux用户 terminal
-ssh username@232.38.220.15  ！！！！！ip改为服务器ip，这里只是示范，不是实际ip。
-bash 修改 对于新用户，使用前需要修改~/.bashrc文件 利用vim对~/.bashrc文件进行编辑，vim用法参考：https://shaobinqiu.github.io/post/vim/
-vim ~/.bashrc  删除原来内容，将下面内容替换原来的./bashrc
-# .bashrc # Source global definitions if [ -f /etc/bashrc ]; then . /etc/bashrc fi # Uncomment the following line if you don&#39;t like systemctl&#39;s auto-paging feature: # export SYSTEMD_PAGER= # User specific aliases and functions ulimit -s unlimited  保存退出后
-source ~/.bashrc  这是为了让修改立刻生效。
-开始使用vasp 15集群赝势文件所在目录：/opt/ohpc/pub/apps/vasp/pps</description>
+      <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win</description>
     </item>
     
   </channel>
