@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="olOwOlo" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-08-30T01:53:34&#43;08:00"/>
+<meta property="og:updated_time" content="2018-09-06T09:54:13&#43;08:00"/>
 
 
 
@@ -130,149 +130,63 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/japanese-preview/">[日本語] 敬語体系</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/vim/">vim</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2017-08-30 </span>
+      <span class="post-time"> 2018-09-06 </span>
       <div class="post-category">
-          <a href="/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/"> 日本語 </a>
+          <a href="/categories/vim/"> vim </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに
+      vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文
     </div>
     <div class="read-more">
-      <a href="/post/japanese-preview/" class="read-more-link">Read more..</a>
+      <a href="/post/vim/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/chinese-preview/">[中文] 《长恨歌》</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/conda/">conda</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2017-08-30 </span>
+      <span class="post-time"> 2018-09-04 </span>
       <div class="post-category">
-          <a href="/categories/%E4%B8%AD%E6%96%87/"> 中文 </a>
+          <a href="/categories/conda/"> conda </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      《长恨歌》是中国唐朝诗人白居易的一首长篇叙事诗。 第一段：贵妃受宠爱 汉皇重色思倾国，御宇多年求不得。杨家有女初长成，养在深闺人未识。 天生丽质难
+      conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all
     </div>
     <div class="read-more">
-      <a href="/post/chinese-preview/" class="read-more-link">Read more..</a>
+      <a href="/post/conda/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/shortcodes/">Shortcodes</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/vasp_scripts/">Vasp_scripts</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2016-08-30 </span>
+      <span class="post-time"> 2018-08-08 </span>
       <div class="post-category">
-          <a href="/categories/shortcodes/"> shortcodes </a>
+          <a href="/categories/vasp/"> vasp </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h1 id="center-right-left">center, right, left</h1>
-
-<pre><code class="language-markdown">## default
-![img](/path/to/img.gif &quot;img&quot;)
-
-{{% center %}}
-## center
-![img](/path/to/img.gif &quot;img&quot;)
-{{% /center %}}
-
-{{% right %}}
-## right
-![img](/path/to/img.gif &quot;img&quot;)
-{{% /right %}}
-
-{{% left %}}
-## left
-![img](/path/to/img.gif &quot;img&quot;)
-{{% /left %}}
-</code></pre>
-
-<p></p>
+      一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有) for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &quot; &quot; -f 1,3,5,10` echo $i $inf &gt;&gt;energy done $AveP = \sum$ 2.截断能测试 rm summary for i in 250 300 350
     </div>
     <div class="read-more">
-      <a href="/post/shortcodes/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/js-flowchart-diagrams/">JS Flowchart Diagrams</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2015-03-04 </span>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <h2 id="usage">Usage</h2>
-
-<pre><code class="language-flowchart">st=&gt;start: Start|past:&gt;http://www.google.com[blank]
-e=&gt;end: End:&gt;http://www.google.com
-op1=&gt;operation: My Operation|past
-op2=&gt;operation: Stuff|current
-sub1=&gt;subroutine: My Subroutine|invalid
-cond=&gt;condition: Yes
-or No?|approved:&gt;http://www.google.com
-c2=&gt;condition: Good idea|rejected
-io=&gt;inputoutput: catch something...|request
-
-st-&gt;op1(right)-&gt;cond
-cond(yes, right)-&gt;c2
-cond(no)-&gt;sub1(left)-&gt;op1
-c2(yes)-&gt;io-&gt;e
-c2(no)-&gt;op2-&gt;e
-</code></pre>
-
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/js-flowchart-diagrams/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/js-sequence-diagrams/">JS Sequence Diagrams</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2015-03-04 </span>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <h2 id="usage">Usage</h2>
-
-<pre><code class="language-sequence">Andrew-&gt;China: Says Hello
-Note right of China: China thinks\nabout it
-China--&gt;Andrew: How are you?
-Andrew-&gt;&gt;China: I am good thanks!
-</code></pre>
-
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/js-sequence-diagrams/" class="read-more-link">Read more..</a>
+      <a href="/post/vasp_scripts/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
@@ -325,7 +239,7 @@ Andrew-&gt;&gt;China: I am good thanks!
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">olOwOlo</span>
+    <span class="author">qiusb</span>
   </span>
 </div>
     </footer>
@@ -338,6 +252,13 @@ Andrew-&gt;&gt;China: I am good thanks!
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.1029e815.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 
