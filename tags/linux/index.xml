@@ -17,7 +17,7 @@
       <pubDate>Tue, 11 Sep 2018 15:07:34 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/slurm/</guid>
-      <description>SLURM 1. 任务提交 1 sbatch job.sh 2. 任务查询 查看用户任务 1 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 1 scancel jobnumber #任务号可以通过s</description>
+      <description>SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Tue, 04 Sep 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/conda/</guid>
-      <description>conda 1.创建环境 1 conda create -n name [dependent package list] 例如 1 conda create -n pyyabc python=3.6 2.激活失效环境 1 2 source activate name source deactivate 3.列出环境 1 conda info --envs 带*为当前环境 4.删除环境 1 conda remove -n name --all</description>
+      <description>conda 1.创建环境 conda create -n name [dependent package list] 例如 conda create -n pyyabc python=3.6 2.激活失效环境 source activate name source deactivate 3.列出环境 conda info --envs 带*为当前环境 4.删除环境 conda remove -n name --all</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
-      <description>linux简单命令 cp 多个文件文件： 1 cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: 1 cp /home/usr/dir/file{1..4} ./ 查看可导入模块： 1 module avail 导入模块： 1 module load modulename 查看已导入模块： 1 module list</description>
+      <description>linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list</description>
     </item>
     
   </channel>

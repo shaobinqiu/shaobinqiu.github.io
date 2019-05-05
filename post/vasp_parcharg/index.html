@@ -65,7 +65,7 @@
 
 <meta itemprop="datePublished" content="2018-10-13T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-13T01:37:56&#43;08:00" />
-<meta itemprop="wordCount" content="309">
+<meta itemprop="wordCount" content="290">
 
 
 
@@ -174,30 +174,8 @@ LCHARG=T保留CHGCAR；  LWAVE=T保留WAVECAR
 <p>2.计算PARCHG
 利用上一步的计算，查看EIGENVAL确定要计算哪些能级的CHG，查看IBZKPT确定计算哪个Ｋ点的CHG。
 INCAR_PARCHG</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">system=name
+
+<pre><code>system=name
 ENCUT=500
 ISIF=2
 ISTART=1
@@ -215,9 +193,10 @@ LCHARG=T
 ALGO=F
 IBAND=100 101
 KPUSE=1
-LPARD=T;LSEPB=T;LSEPK=T</pre></td></tr></table>
-</div>
-</div>
+LPARD=T;LSEPB=T;LSEPK=T
+
+</code></pre>
+
 <p>IBAND: 指定能级, 在EIGENVAL中找到对应序号。</p>
 
 <p>KPUSE: 指定K点，在IBZKPT中找。</p>
@@ -303,7 +282,7 @@ LPARD=T;LSEPB=T;LSEPK=T</pre></td></tr></table>
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.1029e815.min.js"></script>

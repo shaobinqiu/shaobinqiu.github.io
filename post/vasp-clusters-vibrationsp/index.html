@@ -65,7 +65,7 @@
 
 <meta itemprop="datePublished" content="2018-07-31T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2018-07-31T01:37:56&#43;08:00" />
-<meta itemprop="wordCount" content="593">
+<meta itemprop="wordCount" content="537">
 
 
 
@@ -172,21 +172,8 @@ vasp计算团簇是加真空层把团簇当做晶体计算，故其计算结果�
 
 <p>1.结构优化计算（迟豫计算）
 INCAR_R</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">SYSTEM=name
+
+<pre><code>SYSTEM=name
 NSW=200
 ENCUT=400
 ISMEAR=0
@@ -195,33 +182,17 @@ EDIFF=1e-06
 NPAR=2
 ISIF=2
 ISTART=0
-IBRION=2</pre></td></tr></table>
-</div>
-</div>
+IBRION=2
+
+</code></pre>
+
 <p>和普通晶体结构优化无区别。</p>
 
 <p>2.计算频率
 利用上一步得到的优化后的结构CAONTCAR当做这一步的POSCAR计算频率
 INCAR_V</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">SYSTEM=name
+
+<pre><code>SYSTEM=name
 NSW=300
 ENCUT=400
 ISMEAR=0
@@ -234,9 +205,9 @@ EDIFF=1e-06
 ISIF=2
 IBRION=5
 NFREE=2
-POTIM=0.02</pre></td></tr></table>
-</div>
-</div>
+POTIM=0.02
+</code></pre>
+
 <p>最主要差别在于后三个参数设置，详情参照vasp manual。</p>
 
 <p>注意，NSW的值必须大于3Ｎ*NFREE＋１(+-dx dy dz)！！！</p>
@@ -248,51 +219,19 @@ POTIM=0.02</pre></td></tr></table>
 <h1 id="其他">其他：</h1>
 
 <p>KPOINTS统一使用gamma点</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">Automatic mesh
+
+<pre><code>Automatic mesh
 0
 Gamma
 1     1     1
-0     0     0</pre></td></tr></table>
-</div>
-</div>
+0     0     0
+
+
+</code></pre>
+
 <p>任务文件参考</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">申请计算资源的命令
+
+<pre><code>申请计算资源的命令
 
 
 
@@ -314,25 +253,18 @@ mv OSZICAR OSZICAR-V$i
 mv OUTCAR OUTCAR-V$i
 rm WAVECAR
 rm EIGENVAL
-done</pre></td></tr></table>
-</div>
-</div>
+done
+</code></pre>
+
 <p>最后得到的振动盘在OUTCAR里面。采用数据时能量一般使用第一步得到的能量。
 附上提取频率和能量命令。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">grep &#39;cm-1&#39; OUTCAR &gt;&gt; sp.txt
+
+<pre><code>grep 'cm-1' OUTCAR &gt;&gt; sp.txt
 
 E=`tail -1 OSZICAR$i`
-echo $i$E &gt;&gt;energy</pre></td></tr></table>
-</div>
-</div>
+echo $i$E &gt;&gt;energy
+</code></pre>
+
     </div>
 
     <div class="post-copyright">
@@ -412,7 +344,7 @@ echo $i$E &gt;&gt;energy</pre></td></tr></table>
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.1029e815.min.js"></script>

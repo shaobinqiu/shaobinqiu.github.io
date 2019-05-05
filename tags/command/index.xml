@@ -17,7 +17,7 @@
       <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
-      <description>linux简单命令 cp 多个文件文件： 1 cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: 1 cp /home/usr/dir/file{1..4} ./ 查看可导入模块： 1 module avail 导入模块： 1 module load modulename 查看已导入模块： 1 module list</description>
+      <description>linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list</description>
     </item>
     
   </channel>

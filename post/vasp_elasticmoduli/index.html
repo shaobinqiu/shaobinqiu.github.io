@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="1.优化结构 2.计算弹模 INCAR 1 2 3 4 5 6 7 8 9 10 11 ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -39,7 +39,7 @@
 
 
 <meta property="og:title" content="弹性模量的vasp计算" />
-<meta property="og:description" content="1.优化结构 2.计算弹模 INCAR 1 2 3 4 5 6 7 8 9 10 11 ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF" />
+<meta property="og:description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_elasticmoduli/" />
 
@@ -60,19 +60,19 @@
 
 
 <meta itemprop="name" content="弹性模量的vasp计算">
-<meta itemprop="description" content="1.优化结构 2.计算弹模 INCAR 1 2 3 4 5 6 7 8 9 10 11 ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF">
+<meta itemprop="description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；">
 
 
 <meta itemprop="datePublished" content="2019-01-21T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2019-01-21T01:37:56&#43;08:00" />
-<meta itemprop="wordCount" content="367">
+<meta itemprop="wordCount" content="331">
 
 
 
 <meta itemprop="keywords" content="vasp,“elastic moduli”," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="弹性模量的vasp计算"/>
-<meta name="twitter:description" content="1.优化结构 2.计算弹模 INCAR 1 2 3 4 5 6 7 8 9 10 11 ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF"/>
+<meta name="twitter:description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -169,22 +169,8 @@
 <h1 id="2-计算弹模">2.计算弹模</h1>
 
 <p>INCAR</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">ENCUT = 600
+
+<pre><code>ENCUT = 600
 EDIFF = 1e-6
 ISMEAR = 0
 SIGMA = 0.05
@@ -194,48 +180,28 @@ LWAVE = FALSE
 IBRION=6
 ISIF=3
 NFREE=4
-EDIFFG = -0.001</pre></td></tr></table>
-</div>
-</div>
+EDIFFG = -0.001
+</code></pre>
+
 <p>关键参数:  将IBRION=6；ISIF=3；NFREE=4；</p>
 
 <p>不能设置NPAR， 不然会报错：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">ERROR
+
+<pre><code>ERROR
 |      VASP internal routines  have requested a change of the k-point set.    |
 |      Unfortunately this is only possible if NPAR=number of nodes.           |
 |      Please remove the tag NPAR from the INCAR file and restart the         |
-|      calculations.                                                          |</pre></td></tr></table>
-</div>
-</div>
+|      calculations.                                                          |
+</code></pre>
+
 <p>弹性矩阵会直接写在OUTCAR里。</p>
 
 <p>计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。</p>
 
 <p>pcell</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma"> TOTAL ELASTIC MODULI (kBar)
+
+<pre><code>
+ TOTAL ELASTIC MODULI (kBar)
  Direction    XX          YY          ZZ          XY          YZ          ZX
  --------------------------------------------------------------------------------
  XX       10531.4122   1243.9931   1243.9931      0.0000     -0.0000     -0.0000
@@ -244,25 +210,14 @@ EDIFFG = -0.001</pre></td></tr></table>
  XY           0.0000      0.0000      0.0000   5628.7346      0.0000      0.0000
  YZ          -0.0000      0.0000     -0.0000      0.0000   5628.7346     -0.0000
  ZX          -0.0000      0.0000      0.0000      0.0000     -0.0000   5628.7346
- --------------------------------------------------------------------------------</pre></td></tr></table>
-</div>
-</div>
+ --------------------------------------------------------------------------------
+
+
+</code></pre>
+
 <p>supercell</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma"> TOTAL ELASTIC MODULI (kBar)
+
+<pre><code> TOTAL ELASTIC MODULI (kBar)
  Direction    XX          YY          ZZ          XY          YZ          ZX
  --------------------------------------------------------------------------------
  XX       10534.8952   1243.0926   1243.0926      0.0000      0.0000      0.0000
@@ -271,9 +226,9 @@ EDIFFG = -0.001</pre></td></tr></table>
  XY           0.0000      0.0000      0.0000   5629.8633      0.0000     -0.0000
  YZ           0.0000      0.0000     -0.0000     -0.0000   5629.8633     -0.0000
  ZX           0.0000     -0.0000      0.0000     -0.0000     -0.0000   5629.8633
- --------------------------------------------------------------------------------</pre></td></tr></table>
-</div>
-</div>
+ --------------------------------------------------------------------------------
+</code></pre>
+
 <p><img src="https://raw.githubusercontent.com/shaobinqiu/My_blog/master/images/moduli_diamond.png" alt="img" title="img" /></p>
 
     </div>
@@ -353,7 +308,7 @@ EDIFFG = -0.001</pre></td></tr></table>
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.1029e815.min.js"></script>

@@ -184,46 +184,26 @@
   <div class="post-content">
     <div class="post-summary">
       <h1 id="center-right-left">center, right, left</h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gu">##</span> default
-![<span class="nt">img</span>](<span class="na">/path/to/img.gif &#34;img&#34;</span>)<span class="err">
-</span><span class="err">
-</span><span class="err"></span>{{% center %}}<span class="err">
-</span><span class="err"></span><span class="gu">##</span> center
-![<span class="nt">img</span>](<span class="na">/path/to/img.gif &#34;img&#34;</span>)<span class="err">
-</span><span class="err"></span>{{% /center %}}<span class="err">
-</span><span class="err">
-</span><span class="err"></span>{{% right %}}<span class="err">
-</span><span class="err"></span><span class="gu">##</span> right
-![<span class="nt">img</span>](<span class="na">/path/to/img.gif &#34;img&#34;</span>)<span class="err">
-</span><span class="err"></span>{{% /right %}}<span class="err">
-</span><span class="err">
-</span><span class="err"></span>{{% left %}}<span class="err">
-</span><span class="err"></span><span class="gu">##</span> left
-![<span class="nt">img</span>](<span class="na">/path/to/img.gif &#34;img&#34;</span>)<span class="err">
-</span><span class="err"></span>{{% /left %}}</code></pre></td></tr></table>
-</div>
-</div>
+
+<pre><code class="language-markdown">## default
+![img](/path/to/img.gif &quot;img&quot;)
+
+{{% center %}}
+## center
+![img](/path/to/img.gif &quot;img&quot;)
+{{% /center %}}
+
+{{% right %}}
+## right
+![img](/path/to/img.gif &quot;img&quot;)
+{{% /right %}}
+
+{{% left %}}
+## left
+![img](/path/to/img.gif &quot;img&quot;)
+{{% /left %}}
+</code></pre>
+
 <p></p>
     </div>
     <div class="read-more">
@@ -244,26 +224,8 @@
   <div class="post-content">
     <div class="post-summary">
       <h2 id="usage">Usage</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-flowchart" data-lang="flowchart"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-flowchart" data-lang="flowchart">st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+
+<pre><code class="language-flowchart">st=&gt;start: Start|past:&gt;http://www.google.com[blank]
 e=&gt;end: End:&gt;http://www.google.com
 op1=&gt;operation: My Operation|past
 op2=&gt;operation: Stuff|current
@@ -277,9 +239,9 @@ st-&gt;op1(right)-&gt;cond
 cond(yes, right)-&gt;c2
 cond(no)-&gt;sub1(left)-&gt;op1
 c2(yes)-&gt;io-&gt;e
-c2(no)-&gt;op2-&gt;e</code></pre></td></tr></table>
-</div>
-</div>
+c2(no)-&gt;op2-&gt;e
+</code></pre>
+
 <p></p>
     </div>
     <div class="read-more">
@@ -300,20 +262,13 @@ c2(no)-&gt;op2-&gt;e</code></pre></td></tr></table>
   <div class="post-content">
     <div class="post-summary">
       <h2 id="usage">Usage</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-sequence" data-lang="sequence"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-sequence" data-lang="sequence">Andrew-&gt;China: Says Hello
+
+<pre><code class="language-sequence">Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
-Andrew-&gt;&gt;China: I am good thanks!</code></pre></td></tr></table>
-</div>
-</div>
+Andrew-&gt;&gt;China: I am good thanks!
+</code></pre>
+
 <p></p>
     </div>
     <div class="read-more">
@@ -379,7 +334,7 @@ Andrew-&gt;&gt;China: I am good thanks!</code></pre></td></tr></table>
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.1029e815.min.js"></script>
