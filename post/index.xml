@@ -125,7 +125,7 @@
       <pubDate>Fri, 03 Aug 2018 09:54:13 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/linux-simplecommands/</guid>
-      <description>linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list</description>
+      <description>linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查找大文件： find . -type f -size +800M 删除： find . -type f -size +800M | xargs rm 查看可导入模块： module avail 导入模</description>
     </item>
     
     <item>
@@ -143,9 +143,7 @@
       <pubDate>Thu, 08 Mar 2018 17:40:19 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/hidden-post/</guid>
-      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;This post is hidden from the home page.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -201,9 +199,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 ## left
 ![img](/path/to/img.gif &amp;quot;img&amp;quot;)
 {{% /left %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -229,9 +225,7 @@ cond(yes, right)-&amp;gt;c2
 cond(no)-&amp;gt;sub1(left)-&amp;gt;op1
 c2(yes)-&amp;gt;io-&amp;gt;e
 c2(no)-&amp;gt;op2-&amp;gt;e
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -246,9 +240,7 @@ c2(no)-&amp;gt;op2-&amp;gt;e
 Note right of China: China thinks\nabout it
 China--&amp;gt;Andrew: How are you?
 Andrew-&amp;gt;&amp;gt;China: I am good thanks!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -260,9 +252,7 @@ Andrew-&amp;gt;&amp;gt;China: I am good thanks!
       <description>&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
   alert(&amp;quot;Hello, World!&amp;quot;)
 }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

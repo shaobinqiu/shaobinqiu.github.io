@@ -16,14 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查找大文件： find . -type f -size &#43;800M 删除： find . -type f -size &#43;800M | xargs rm 查看可导入模块： module avail 导入模" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.41 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/linux-simplecommands/" />
@@ -39,40 +39,26 @@
 
 
 <meta property="og:title" content="Linux Simplecommands" />
-<meta property="og:description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list" />
+<meta property="og:description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查找大文件： find . -type f -size &#43;800M 删除： find . -type f -size &#43;800M | xargs rm 查看可导入模块： module avail 导入模" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shaobinqiu.github.io/post/linux-simplecommands/" />
-
-
-
 <meta property="article:published_time" content="2018-08-03T09:54:13&#43;08:00"/>
-
 <meta property="article:modified_time" content="2018-08-03T10:54:13&#43;08:00"/>
 
-
-
-
-
-
-
-
-
-
-
 <meta itemprop="name" content="Linux Simplecommands">
-<meta itemprop="description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list">
+<meta itemprop="description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查找大文件： find . -type f -size &#43;800M 删除： find . -type f -size &#43;800M | xargs rm 查看可导入模块： module avail 导入模">
 
 
 <meta itemprop="datePublished" content="2018-08-03T09:54:13&#43;08:00" />
-<meta itemprop="dateModified" content="2018-08-03T09:54:13&#43;08:00" />
-<meta itemprop="wordCount" content="61">
+<meta itemprop="dateModified" content="2018-08-03T10:54:13&#43;08:00" />
+<meta itemprop="wordCount" content="85">
 
 
 
 <meta itemprop="keywords" content="linux,command," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux Simplecommands"/>
-<meta name="twitter:description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查看可导入模块： module avail 导入模块： module load modulename 查看已导入模块： module list"/>
+<meta name="twitter:description" content="linux简单命令 cp 多个文件文件： cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/ cp 拥有共同前缀文件: cp /home/usr/dir/file{1..4} ./ 查找大文件： find . -type f -size &#43;800M 删除： find . -type f -size &#43;800M | xargs rm 查看可导入模块： module avail 导入模"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -173,6 +159,16 @@
 <p>cp 拥有共同前缀文件:</p>
 
 <pre><code>cp /home/usr/dir/file{1..4} ./
+</code></pre>
+
+<p>查找大文件：</p>
+
+<pre><code>find . -type f -size +800M
+</code></pre>
+
+<p>删除：</p>
+
+<pre><code>find . -type f -size +800M | xargs rm
 </code></pre>
 
 <p>查看可导入模块：</p>

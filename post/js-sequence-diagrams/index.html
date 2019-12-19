@@ -16,15 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="Usage Andrew-&amp;gt;China: Says Hello Note right of China: China thinks\nabout it China--&amp;gt;Andrew: How are you? Andrew-&amp;gt;&amp;gt;China: I am good thanks!  
-" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="Usage Andrew-&amp;gt;China: Says Hello Note right of China: China thinks\nabout it China--&amp;gt;Andrew: How are you? Andrew-&amp;gt;&amp;gt;China: I am good thanks! " /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.41 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/js-sequence-diagrams/" />
@@ -46,27 +45,11 @@ Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
-
-
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shaobinqiu.github.io/post/js-sequence-diagrams/" />
-
-
-
 <meta property="article:published_time" content="2015-03-04T21:57:45&#43;08:00"/>
-
 <meta property="article:modified_time" content="2015-03-04T21:57:45&#43;08:00"/>
-
-
-
-
-
-
-
-
-
-
 
 <meta itemprop="name" content="JS Sequence Diagrams">
 <meta itemprop="description" content="Usage
@@ -75,14 +58,12 @@ Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
-
-
 ">
 
 
 <meta itemprop="datePublished" content="2015-03-04T21:57:45&#43;08:00" />
 <meta itemprop="dateModified" content="2015-03-04T21:57:45&#43;08:00" />
-<meta itemprop="wordCount" content="248">
+<meta itemprop="wordCount" content="249">
 
 
 
@@ -95,8 +76,6 @@ Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
-
-
 "/>
 
 <!--[if lte IE 9]>
@@ -180,8 +159,7 @@ Andrew-&gt;&gt;China: I am good thanks!
 <ul>
 <li>
 <ul>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#configuration">Configuration</a>
+<li><a href="#usage">Usage</a>
 <ul>
 <li><a href="#options">Options</a></li>
 </ul></li>
@@ -200,21 +178,18 @@ China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
 </code></pre>
 
-<p></p>
+<pre><code class="language-sequence">    Andrew-&gt;China: Says Hello
+    Note right of China: China thinks\nabout it
+    China--&gt;Andrew: How are you?
+    Andrew-&gt;&gt;China: I am good thanks!
+    ```
 
-<pre><code>```sequence
-Andrew-&gt;China: Says Hello
-Note right of China: China thinks\nabout it
-China--&gt;Andrew: How are you?
-Andrew-&gt;&gt;China: I am good thanks!
-```
-</code></pre>
+## Configuration
 
-<h2 id="configuration">Configuration</h2>
+Configure for all home and regular pages:
 
-<p>Configure for all home and regular pages:</p>
-
-<pre><code class="language-toml">[params.sequenceDiagrams]
+```toml
+[params.sequenceDiagrams]
   enable = true
   options = &quot;{theme: 'hand'}&quot;
 </code></pre>
