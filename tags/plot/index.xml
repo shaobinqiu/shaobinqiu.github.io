@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plot on Daozhang</title>
+    <link>https://shaobinqiu.github.io/tags/plot/</link>
+    <description>Recent content in plot on Daozhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 Aug 2020 09:54:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://shaobinqiu.github.io/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>matlab</title>
+      <link>https://shaobinqiu.github.io/post/matlab/</link>
+      <pubDate>Wed, 26 Aug 2020 09:54:13 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/matlab/</guid>
+      <description>Matlab绘图中用到的直线属性 （1）LineStyle：线形 （2）LineWidth：线宽 （3）Color：颜色 （4）MarkerType</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>matlab</title>
+      <link>https://shaobinqiu.github.io/post/matlab/</link>
+      <pubDate>Wed, 26 Aug 2020 09:54:13 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/matlab/</guid>
+      <description>Matlab绘图中用到的直线属性 （1）LineStyle：线形 （2）LineWidth：线宽 （3）Color：颜色 （4）MarkerType</description>
+    </item>
+    
+    <item>
       <title>Bloch theorem</title>
       <link>https://shaobinqiu.github.io/post/bloch_theorem/</link>
       <pubDate>Mon, 08 Apr 2019 09:54:13 +0800</pubDate>

@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>https://shaobinqiu.github.io/post/matlab/</loc>
+    <lastmod>2020-09-27T10:54:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://shaobinqiu.github.io/post/bloch_theorem/</loc>
     <lastmod>2019-04-04T10:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -191,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/english/</loc>
+    <loc>https://shaobinqiu.github.io/tags/english/</loc>
     <lastmod>2017-08-31T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/tags/english/</loc>
+    <loc>https://shaobinqiu.github.io/categories/english/</loc>
     <lastmod>2017-08-31T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -212,13 +219,6 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/slurm/</loc>
-    <lastmod>2018-09-11T15:54:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shaobinqiu.github.io/tags/slurm/</loc>
     <lastmod>2018-09-11T15:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -226,14 +226,21 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/syntax-highlighting/</loc>
-    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <loc>https://shaobinqiu.github.io/categories/slurm/</loc>
+    <lastmod>2018-09-11T15:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://shaobinqiu.github.io/tags/syntax-highlighting/</loc>
+    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/categories/syntax-highlighting/</loc>
     <lastmod>2017-08-30T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -247,14 +254,14 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/theme-preview/</loc>
+    <loc>https://shaobinqiu.github.io/tags/theme-preview/</loc>
     <lastmod>2017-08-23T18:03:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/tags/theme-preview/</loc>
+    <loc>https://shaobinqiu.github.io/categories/theme-preview/</loc>
     <lastmod>2017-08-23T18:03:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -282,13 +289,6 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/conda/</loc>
-    <lastmod>2018-09-04T10:54:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shaobinqiu.github.io/tags/conda/</loc>
     <lastmod>2018-09-04T10:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -296,14 +296,21 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/dftb/</loc>
-    <lastmod>2018-11-11T01:37:56+08:00</lastmod>
+    <loc>https://shaobinqiu.github.io/categories/conda/</loc>
+    <lastmod>2018-09-04T10:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://shaobinqiu.github.io/tags/dftb/</loc>
+    <lastmod>2018-11-11T01:37:56+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/categories/dftb/</loc>
     <lastmod>2018-11-11T01:37:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -317,13 +324,6 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/linux/</loc>
-    <lastmod>2018-08-03T10:54:13+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shaobinqiu.github.io/tags/linux/</loc>
     <lastmod>2018-09-11T15:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -331,8 +331,36 @@
   </url>
   
   <url>
+    <loc>https://shaobinqiu.github.io/categories/linux/</loc>
+    <lastmod>2018-08-03T10:54:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/tags/matlab/</loc>
+    <lastmod>2020-09-27T10:54:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/categories/matlab/</loc>
+    <lastmod>2020-09-27T10:54:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://shaobinqiu.github.io/categories/notes/</loc>
     <lastmod>2019-04-04T10:54:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/tags/plot/</loc>
+    <lastmod>2020-09-27T10:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -352,14 +380,14 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/shortcodes/</loc>
+    <loc>https://shaobinqiu.github.io/tags/shortcodes/</loc>
     <lastmod>2018-02-01T18:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/tags/shortcodes/</loc>
+    <loc>https://shaobinqiu.github.io/categories/shortcodes/</loc>
     <lastmod>2018-02-01T18:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -401,13 +429,6 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/vasp/</loc>
-    <lastmod>2019-01-21T01:37:56+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://shaobinqiu.github.io/tags/vasp/</loc>
     <lastmod>2019-01-21T01:37:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -415,14 +436,21 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/vim/</loc>
-    <lastmod>2018-09-06T10:54:13+08:00</lastmod>
+    <loc>https://shaobinqiu.github.io/categories/vasp/</loc>
+    <lastmod>2019-01-21T01:37:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://shaobinqiu.github.io/tags/vim/</loc>
+    <lastmod>2018-09-06T10:54:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaobinqiu.github.io/categories/vim/</loc>
     <lastmod>2018-09-06T10:54:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -478,14 +506,14 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/%E4%B8%AD%E6%96%87/</loc>
+    <loc>https://shaobinqiu.github.io/tags/%E4%B8%AD%E6%96%87/</loc>
     <lastmod>2017-08-30T01:37:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/tags/%E4%B8%AD%E6%96%87/</loc>
+    <loc>https://shaobinqiu.github.io/categories/%E4%B8%AD%E6%96%87/</loc>
     <lastmod>2017-08-30T01:37:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -499,14 +527,14 @@
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
+    <loc>https://shaobinqiu.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
     <lastmod>2017-08-30T01:53:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shaobinqiu.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
+    <loc>https://shaobinqiu.github.io/categories/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
     <lastmod>2017-08-30T01:53:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
