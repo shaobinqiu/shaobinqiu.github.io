@@ -1,15 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>“vasp” on Daozhang</title>
+    <title>vasp on Daozhang</title>
     <link>https://shaobinqiu.github.io/categories/vasp/</link>
-    <description>Recent content in “vasp” on Daozhang</description>
+    <description>Recent content in vasp on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Sep 2018 18:03:09 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jan 2019 01:37:56 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/categories/vasp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>弹性模量的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</link>
+      <pubDate>Mon, 21 Jan 2019 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_elasticmoduli/</guid>
+      <description>1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；</description>
+    </item>
     
-	<atom:link href="https://shaobinqiu.github.io/categories/vasp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>电声耦合强度的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/</link>
+      <pubDate>Mon, 15 Oct 2018 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/</guid>
+      <description>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors</description>
+    </item>
     
+    <item>
+      <title>指定能级的电子时空间分布的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp_parcharg/</link>
+      <pubDate>Sat, 13 Oct 2018 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_parcharg/</guid>
+      <description>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化</description>
+    </item>
     
     <item>
       <title>15上的vasp计算提交示范</title>
@@ -18,6 +41,24 @@
       
       <guid>https://shaobinqiu.github.io/post/vasp_example/</guid>
       <description>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win</description>
+    </item>
+    
+    <item>
+      <title>Vasp_scripts</title>
+      <link>https://shaobinqiu.github.io/post/vasp_scripts/</link>
+      <pubDate>Wed, 08 Aug 2018 17:06:55 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_scripts/</guid>
+      <description>一些小脚本 1. OSZICAR最后一行信息 $i $ionstep $F $E $mag(如果有) for i in {1..80} do E=`tail -1 OSZICAR-$i` inf=`echo $E|cut -d &amp;quot; &amp;quot; -f 1,3,5,10` echo $i $inf &amp;gt;&amp;gt;energy done $AveP = \sum$ 2.截断能测试 #!/bin/bash -l # NOTE the -l flag! #</description>
+    </item>
+    
+    <item>
+      <title>团簇振动频率谱的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/</link>
+      <pubDate>Tue, 31 Jul 2018 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/</guid>
+      <description>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计</description>
     </item>
     
   </channel>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/slurm/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="SLURM" />
 <meta property="og:description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/slurm/" />
-<meta property="article:published_time" content="2018-09-11T15:07:34&#43;08:00"/>
-<meta property="article:modified_time" content="2018-09-11T15:54:13&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/slurm/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-09-11T15:07:34&#43;08:00" />
+<meta property="article:modified_time" content="2018-09-11T15:54:13&#43;08:00" />
 
 <meta itemprop="name" content="SLURM">
-<meta itemprop="description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque">
-
-
-<meta itemprop="datePublished" content="2018-09-11T15:07:34&#43;08:00" />
+<meta itemprop="description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque"><meta itemprop="datePublished" content="2018-09-11T15:07:34&#43;08:00" />
 <meta itemprop="dateModified" content="2018-09-11T15:54:13&#43;08:00" />
 <meta itemprop="wordCount" content="159">
-
-
-
-<meta itemprop="keywords" content="linux,SLURM," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="linux,SLURM," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SLURM"/>
 <meta name="twitter:description" content="SLURM 1. 任务提交 sbatch job.sh 2. 任务查询 查看用户任务 squeue 任务状态 PD 排队等待 R 运行 S 挂起 F 失败结束 CA 取消 TO 超时 NF 节点故障 3. 任务删除 scancel jobnumber #任务号可以通过sque"/>
 
@@ -140,68 +133,37 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#slurm">SLURM</a>
-<ul>
-<li><a href="#1-任务提交">1. 任务提交</a></li>
-<li><a href="#2-任务查询">2. 任务查询</a></li>
-<li><a href="#3-任务删除">3. 任务删除</a></li>
-<li><a href="#4-查看计算资源">4. 查看计算资源</a></li>
-</ul></li>
-<li><a href="#任务脚本参考">任务脚本参考</a></li>
-</ul>
+  <ul>
+    <li><a href="#1-任务提交">1. 任务提交</a></li>
+    <li><a href="#2-任务查询">2. 任务查询</a></li>
+    <li><a href="#3-任务删除">3. 任务删除</a></li>
+    <li><a href="#4-查看计算资源">4. 查看计算资源</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h1 id="slurm">SLURM</h1>
-
+      <h1 id="slurm">SLURM</h1>
 <h2 id="1-任务提交">1. 任务提交</h2>
-
 <pre><code>sbatch job.sh
-</code></pre>
-
-<h2 id="2-任务查询">2. 任务查询</h2>
-
+</code></pre><h2 id="2-任务查询">2. 任务查询</h2>
 <p>查看用户任务</p>
-
 <pre><code>squeue
-</code></pre>
-
-<p>任务状态</p>
-
+</code></pre><p>任务状态</p>
 <p>PD    排队等待</p>
-
 <p>R     运行</p>
-
 <p>S     挂起</p>
-
 <p>F     失败结束</p>
-
 <p>CA    取消</p>
-
 <p>TO    超时</p>
-
 <p>NF    节点故障</p>
-
 <h2 id="3-任务删除">3. 任务删除</h2>
-
 <pre><code>scancel jobnumber #任务号可以通过squeue看到
-</code></pre>
-
-<h2 id="4-查看计算资源">4. 查看计算资源</h2>
-
+</code></pre><h2 id="4-查看计算资源">4. 查看计算资源</h2>
 <pre><code>sinfo
-</code></pre>
-
-<p>分区和时间上限都可以看到</p>
-
+</code></pre><p>分区和时间上限都可以看到</p>
 <h1 id="任务脚本参考">任务脚本参考</h1>
-
 <p>job.sh</p>
-
 <pre><code>#!/bin/bash -l
 # NOTE the -l flag!
 #
@@ -218,12 +180,8 @@ module load vasp/5.4.4-impi-mkl
 
 # add your job logical here!!!
 mpirun -n 12 vasp_std       
-</code></pre>
-
-<p>more SLURM:</p>
-
+</code></pre><p>more SLURM:</p>
 <p><a href="https://research.computing.yale.edu/support/hpc/user-guide/slurm">https://research.computing.yale.edu/support/hpc/user-guide/slurm</a></p>
-
 <p><a href="https://hpcc.usc.edu/support/documentation/slurm/">https://hpcc.usc.edu/support/documentation/slurm/</a></p>
 
     </div>

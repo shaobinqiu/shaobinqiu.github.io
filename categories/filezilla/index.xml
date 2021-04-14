@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>“filezilla” on Daozhang</title>
@@ -6,11 +6,7 @@
     <description>Recent content in “filezilla” on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 11 Sep 2018 20:03:09 +0800</lastBuildDate>
-    
-	<atom:link href="https://shaobinqiu.github.io/categories/filezilla/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Sep 2018 20:03:09 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/categories/filezilla/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>filezilla的使用</title>
       <link>https://shaobinqiu.github.io/post/filezilla/</link>

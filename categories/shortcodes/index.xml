@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shortcodes on Daozhang</title>
@@ -6,11 +6,7 @@
     <description>Recent content in shortcodes on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 30 Aug 2016 16:01:23 +0800</lastBuildDate>
-    
-	<atom:link href="https://shaobinqiu.github.io/categories/shortcodes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 30 Aug 2016 16:01:23 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/categories/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shortcodes</title>
       <link>https://shaobinqiu.github.io/post/shortcodes/</link>
@@ -18,25 +14,24 @@
       
       <guid>https://shaobinqiu.github.io/post/shortcodes/</guid>
       <description>&lt;h1 id=&#34;center-right-left&#34;&gt;center, right, left&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;## default
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## default
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 
 {{% center %}}
-## center
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## center
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 {{% /center %}}
 
 {{% right %}}
-## right
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## right
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 {{% /right %}}
 
 {{% left %}}
-## left
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## left
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 {{% /left %}}
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

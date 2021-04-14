@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="电声耦合强度的vasp计算" />
 <meta property="og:description" content="利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/" />
-<meta property="article:published_time" content="2018-10-15T01:37:56&#43;08:00"/>
-<meta property="article:modified_time" content="2018-10-15T01:37:56&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-10-15T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2018-10-15T01:37:56&#43;08:00" />
 
 <meta itemprop="name" content="电声耦合强度的vasp计算">
-<meta itemprop="description" content="利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors">
-
-
-<meta itemprop="datePublished" content="2018-10-15T01:37:56&#43;08:00" />
+<meta itemprop="description" content="利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors"><meta itemprop="datePublished" content="2018-10-15T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-15T01:37:56&#43;08:00" />
 <meta itemprop="wordCount" content="160">
-
-
-
-<meta itemprop="keywords" content="vasp,“electron-phonon coupling”," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="vasp,“electron-phonon coupling”," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="电声耦合强度的vasp计算"/>
 <meta name="twitter:description" content="利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。 eigenvectors"/>
 
@@ -139,18 +132,14 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
       <p>利用vasp可以得到特征频率\omega_i，得到的hessian matrix 和 eigenvalue and eigenvectors of hessian matrix都在vasprum.xml里面（文件后部分）。</p>
-
 <p>eigenvectors 为行向量。</p>
-
 <p>方法是先按照eigenvector的模式来移动原子（设置最大的移动距离某一数值，例如0.05埃），然后电子步自恰迭代得到总能和能级的变化。</p>
-
 <p>INCAR参考：</p>
-
 <pre><code>NSW=0
 ENCUT=400
 ISMEAR=0
@@ -161,7 +150,6 @@ NPAR=4
 IBRION=-1
 
 </code></pre>
-
     </div>
 
     <div class="post-copyright">

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/vasp_example/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="15上的vasp计算提交示范" />
 <meta property="og:description" content="为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_example/" />
-<meta property="article:published_time" content="2018-09-11T18:03:09&#43;08:00"/>
-<meta property="article:modified_time" content="2018-09-11T18:04:09&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_example/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-09-11T18:03:09&#43;08:00" />
+<meta property="article:modified_time" content="2018-09-11T18:04:09&#43;08:00" />
 
 <meta itemprop="name" content="15上的vasp计算提交示范">
-<meta itemprop="description" content="为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win">
-
-
-<meta itemprop="datePublished" content="2018-09-11T18:03:09&#43;08:00" />
+<meta itemprop="description" content="为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win"><meta itemprop="datePublished" content="2018-09-11T18:03:09&#43;08:00" />
 <meta itemprop="dateModified" content="2018-09-11T18:04:09&#43;08:00" />
 <meta itemprop="wordCount" content="594">
-
-
-
-<meta itemprop="keywords" content="15,vasp," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="15,vasp," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="15上的vasp计算提交示范"/>
 <meta name="twitter:description" content="为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。 先找管理员要到自己的账号密码。接下来 登录集群 win"/>
 
@@ -140,50 +133,31 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#登录集群">登录集群</a></li>
-<li><a href="#bash-修改">bash 修改</a></li>
-<li><a href="#开始使用vasp">开始使用vasp</a></li>
-<li><a href="#提交任务">提交任务</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#登录集群">登录集群</a></li>
+    <li><a href="#bash-修改">bash 修改</a></li>
+    <li><a href="#开始使用vasp">开始使用vasp</a></li>
+    <li><a href="#提交任务">提交任务</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。
+      <p>为方便零基础的新同学尽快熟悉在集群15上面的vasp计算，这里讲一个简单的计算流程走一遍。
 先找管理员要到自己的账号密码。接下来</p>
-
 <h2 id="登录集群">登录集群</h2>
-
-<p>windows用户推荐使用cmder软件链接服务器。下载链接：<a href="http://cmder.net/">http://cmder.net/</a>
+<p>windows用户推荐使用cmder软件链接服务器。下载链接：http://cmder.net/
 打开软件，在命令行操作</p>
-
 <pre><code>ssh username@232.38.220.15
-</code></pre>
-
-<p>linux用户
+</code></pre><p>linux用户
 terminal</p>
-
 <pre><code>ssh username@232.38.220.15
-</code></pre>
-
-<p>！！！！！ip改为服务器ip，这里只是示范，不是实际ip。</p>
-
+</code></pre><p>！！！！！ip改为服务器ip，这里只是示范，不是实际ip。</p>
 <h2 id="bash-修改">bash 修改</h2>
-
 <p>对于新用户，使用前需要修改~/.bashrc文件
-利用vim对~/.bashrc文件进行编辑，vim用法参考：<a href="https://shaobinqiu.github.io/post/vim/">https://shaobinqiu.github.io/post/vim/</a></p>
-
+利用vim对~/.bashrc文件进行编辑，vim用法参考：https://shaobinqiu.github.io/post/vim/</p>
 <pre><code>vim ~/.bashrc
-</code></pre>
-
-<p>删除原来内容，将下面内容替换原来的./bashrc</p>
-
+</code></pre><p>删除原来内容，将下面内容替换原来的./bashrc</p>
 <pre><code># .bashrc
 
 # Source global definitions
@@ -197,26 +171,14 @@ fi
 # User specific aliases and functions
 ulimit -s unlimited
 
-</code></pre>
-
-<p>保存退出后</p>
-
+</code></pre><p>保存退出后</p>
 <pre><code>source ~/.bashrc
-</code></pre>
-
-<p>这是为了让修改立刻生效。</p>
-
+</code></pre><p>这是为了让修改立刻生效。</p>
 <h2 id="开始使用vasp">开始使用vasp</h2>
-
 <p>15集群赝势文件所在目录：/opt/ohpc/pub/apps/vasp/pps</p>
-
 <p>将自己的计算文件（POSCAR KPOINTS POTCAR INCAR &hellip;）放在一个文件夹下,进入文件夹</p>
-
 <pre><code>vim job.sh #创建提交任务脚本
-</code></pre>
-
-<p>将下面内容贴到job.sh中</p>
-
+</code></pre><p>将下面内容贴到job.sh中</p>
 <pre><code>#!/bin/bash -l
 # NOTE the -l flag!
 #
@@ -233,16 +195,10 @@ module load vasp/5.4.4-impi-mkl
 
 # add your job logical here!!!
 mpirun -n 12 vasp_std
-</code></pre>
-
-<h2 id="提交任务">提交任务</h2>
-
+</code></pre><h2 id="提交任务">提交任务</h2>
 <p>一切准备就绪后（文件夹下必须文件POSCAR POTCAR INCAR KPOINTS job.sh），可以提交任务。</p>
-
 <p>15集群使用的任务管理系统是SLURM</p>
-
 <p>任务的管理查看SLURM模块：</p>
-
 <p><a href="https://shaobinqiu.github.io/post/slurm/">https://shaobinqiu.github.io/post/slurm/</a></p>
 
     </div>

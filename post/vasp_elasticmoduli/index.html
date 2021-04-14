@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/vasp_elasticmoduli/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="弹性模量的vasp计算" />
 <meta property="og:description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_elasticmoduli/" />
-<meta property="article:published_time" content="2019-01-21T01:37:56&#43;08:00"/>
-<meta property="article:modified_time" content="2019-01-21T01:37:56&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_elasticmoduli/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-01-21T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2019-01-21T01:37:56&#43;08:00" />
 
 <meta itemprop="name" content="弹性模量的vasp计算">
-<meta itemprop="description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；">
-
-
-<meta itemprop="datePublished" content="2019-01-21T01:37:56&#43;08:00" />
+<meta itemprop="description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；"><meta itemprop="datePublished" content="2019-01-21T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2019-01-21T01:37:56&#43;08:00" />
 <meta itemprop="wordCount" content="339">
-
-
-
-<meta itemprop="keywords" content="vasp,“elastic moduli”," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="vasp,“elastic moduli”," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="弹性模量的vasp计算"/>
 <meta name="twitter:description" content="1.优化结构 2.计算弹模 INCAR ENCUT = 600 EDIFF = 1e-6 ISMEAR = 0 SIGMA = 0.05 POTIM = 0.1 LCHARG = FALSE LWAVE = FALSE IBRION=6 ISIF=3 NFREE=4 EDIFFG = -0.001 关键参数: 将IBRION=6；ISIF=3；NFREE=4；"/>
 
@@ -139,23 +132,13 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#1-优化结构">1.优化结构</a></li>
-<li><a href="#2-计算弹模">2.计算弹模</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h1 id="1-优化结构">1.优化结构</h1>
-
-<h1 id="2-计算弹模">2.计算弹模</h1>
-
+      <h1 id="1优化结构">1.优化结构</h1>
+<h1 id="2计算弹模">2.计算弹模</h1>
 <p>INCAR</p>
-
 <pre><code>ENCUT = 600
 EDIFF = 1e-6
 ISMEAR = 0
@@ -167,25 +150,16 @@ IBRION=6
 ISIF=3
 NFREE=4
 EDIFFG = -0.001
-</code></pre>
-
-<p>关键参数:  将IBRION=6；ISIF=3；NFREE=4；</p>
-
+</code></pre><p>关键参数:  将IBRION=6；ISIF=3；NFREE=4；</p>
 <p>不能设置NPAR， 不然会报错：</p>
-
 <pre><code>ERROR
 |      VASP internal routines  have requested a change of the k-point set.    |
 |      Unfortunately this is only possible if NPAR=number of nodes.           |
 |      Please remove the tag NPAR from the INCAR file and restart the         |
 |      calculations.                                                          |
-</code></pre>
-
-<p>弹性矩阵会直接写在OUTCAR里。</p>
-
+</code></pre><p>弹性矩阵会直接写在OUTCAR里。</p>
 <p>计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。</p>
-
 <p>pcell</p>
-
 <pre><code>
  TOTAL ELASTIC MODULI (kBar)
  Direction    XX          YY          ZZ          XY          YZ          ZX
@@ -199,10 +173,7 @@ EDIFFG = -0.001
  --------------------------------------------------------------------------------
 
 
-</code></pre>
-
-<p>supercell</p>
-
+</code></pre><p>supercell</p>
 <pre><code> TOTAL ELASTIC MODULI (kBar)
  Direction    XX          YY          ZZ          XY          YZ          ZX
  --------------------------------------------------------------------------------
@@ -213,9 +184,7 @@ EDIFFG = -0.001
  YZ           0.0000      0.0000     -0.0000     -0.0000   5629.8633     -0.0000
  ZX           0.0000     -0.0000      0.0000     -0.0000     -0.0000   5629.8633
  --------------------------------------------------------------------------------
-</code></pre>
-
-<p>实验数据参考： <a href="https://doi.org/10.1063/1.4704698">https://doi.org/10.1063/1.4704698</a></p>
+</code></pre><p>实验数据参考： <a href="https://doi.org/10.1063/1.4704698">https://doi.org/10.1063/1.4704698</a></p>
 
     </div>
 

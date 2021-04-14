@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/vim/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="vim" />
 <meta property="og:description" content="vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/vim/" />
-<meta property="article:published_time" content="2018-09-06T09:54:13&#43;08:00"/>
-<meta property="article:modified_time" content="2018-09-06T10:54:13&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vim/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-09-06T09:54:13&#43;08:00" />
+<meta property="article:modified_time" content="2018-09-06T10:54:13&#43;08:00" />
 
 <meta itemprop="name" content="vim">
-<meta itemprop="description" content="vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文">
-
-
-<meta itemprop="datePublished" content="2018-09-06T09:54:13&#43;08:00" />
+<meta itemprop="description" content="vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文"><meta itemprop="datePublished" content="2018-09-06T09:54:13&#43;08:00" />
 <meta itemprop="dateModified" content="2018-09-06T10:54:13&#43;08:00" />
 <meta itemprop="wordCount" content="550">
-
-
-
-<meta itemprop="keywords" content="linux,vim," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="linux,vim," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="vim"/>
 <meta name="twitter:description" content="vim 保存编辑 进入insert mode 按i进入插入模式后, 是从光标当前位置开始输入文件； 按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文"/>
 
@@ -140,97 +133,56 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#vim">vim</a>
-<ul>
-<li><a href="#保存编辑">保存编辑</a></li>
-<li><a href="#光标移动">光标移动</a></li>
-<li><a href="#删除">删除</a></li>
-<li><a href="#撤销">撤销</a></li>
-<li><a href="#多行编辑">多行编辑</a></li>
-<li><a href="#显示行号">显示行号</a></li>
-<li><a href="#小提示">小提示</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#保存编辑">保存编辑</a></li>
+    <li><a href="#光标移动">光标移动</a></li>
+    <li><a href="#删除">删除</a></li>
+    <li><a href="#撤销">撤销</a></li>
+    <li><a href="#多行编辑">多行编辑</a></li>
+    <li><a href="#显示行号">显示行号</a></li>
+    <li><a href="#小提示">小提示</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h1 id="vim">vim</h1>
-
+      <h1 id="vim">vim</h1>
 <h2 id="保存编辑">保存编辑</h2>
-
 <p>进入insert mode</p>
-
 <p>按i进入插入模式后, 是从光标当前位置开始输入文件；</p>
-
 <p>按a进入插入模式后，是从目前光标所在位置的下一个位置开始输入文字；</p>
-
 <p>按o进入插入模式后，是插入新的一行，从行首开始输入文字。</p>
-
 <p>退出insert mode</p>
-
 <pre><code>Esc
-</code></pre>
-
-<p>退出</p>
-
+</code></pre><p>退出</p>
 <pre><code>：w filename #以指定文件名保存
 ：wq #保存退出
 ：q！ #不保存强制退出
-</code></pre>
-
-<h2 id="光标移动">光标移动</h2>
-
+</code></pre><h2 id="光标移动">光标移动</h2>
 <p>按「G」：移动到文章的最后。</p>
-
 <p>按「$」：移动到光标所在行的“行尾”。</p>
-
 <p>按「^」：移动到光标所在行的“行首”。</p>
-
 <p>按「ctrl」+「b」：屏幕往“后”移动一页。</p>
-
 <p>按「ctrl」+「f」：屏幕往“前”移动一页。</p>
-
 <p>按「ctrl」+「u」：屏幕往“后”移动半页。</p>
-
 <p>按「ctrl」+「d」：屏幕往“前”移动半页。</p>
-
 <h2 id="删除">删除</h2>
-
 <p>「x  」：每按一次，删除光标所在位置的“后面”一个字符。</p>
-
 <p>「#x 」：例如，「6x」表示删除光标所在位置的“后面”6个字符。</p>
-
 <p>「dd 」：删除光标所在行。</p>
-
 <p>「#dd」：从光标所在行开始删除#行。</p>
-
 <p>「,$d」:删除当前到最后。</p>
-
 <p>「1,.d」:删除第一行到当前。</p>
-
 <h2 id="撤销">撤销</h2>
-
 <p>u</p>
-
 <h2 id="多行编辑">多行编辑</h2>
-
 <p>ctrl-v
 I(后添加$ 跳到最后，然后A编辑)
 ESC</p>
-
 <h2 id="显示行号">显示行号</h2>
-
 <pre><code>：set nu
-</code></pre>
-
-<h2 id="小提示">小提示</h2>
-
+</code></pre><h2 id="小提示">小提示</h2>
 <p>习惯了按ctrl+s 保存，在用vi的时候，也习惯性的按ctrl+s，结果就是如同终端死掉了一样。</p>
-
 <p>原来：ctrl+s 终止屏幕输出（即停止回显），你敲的依然有效，只是看不见，可以ctrl+q 恢复输出。</p>
 
     </div>

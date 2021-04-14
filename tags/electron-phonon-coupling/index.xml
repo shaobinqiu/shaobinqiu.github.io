@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>“electron-phonon coupling” on Daozhang</title>
@@ -6,11 +6,7 @@
     <description>Recent content in “electron-phonon coupling” on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Oct 2018 01:37:56 +0800</lastBuildDate>
-    
-	<atom:link href="https://shaobinqiu.github.io/tags/electron-phonon-coupling/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 15 Oct 2018 01:37:56 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/tags/electron-phonon-coupling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电声耦合强度的vasp计算</title>
       <link>https://shaobinqiu.github.io/post/vasp_electron_phonon_coupling/</link>

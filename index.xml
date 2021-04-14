@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daozhang</title>
@@ -6,11 +6,7 @@
     <description>Recent content on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Aug 2017 18:03:09 +0800</lastBuildDate>
-    
-	<atom:link href="https://shaobinqiu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 26 Aug 2020 09:54:13 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme preview</title>
       <link>https://shaobinqiu.github.io/post/even-preview/</link>
@@ -28,8 +24,7 @@
       <guid>https://shaobinqiu.github.io/about/</guid>
       <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-asddddddddddddd</description>
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
     </item>
     
     <item>
@@ -202,25 +197,24 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       
       <guid>https://shaobinqiu.github.io/post/shortcodes/</guid>
       <description>&lt;h1 id=&#34;center-right-left&#34;&gt;center, right, left&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;## default
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## default
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 
 {{% center %}}
-## center
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## center
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 {{% /center %}}
 
 {{% right %}}
-## right
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## right
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 {{% /right %}}
 
 {{% left %}}
-## left
-![img](/path/to/img.gif &amp;quot;img&amp;quot;)
+&lt;span style=&#34;color:#75715e&#34;&gt;## left
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/path/to/img.gif &amp;#34;img&amp;#34;&lt;/span&gt;)
 {{% /left %}}
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -230,8 +224,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       
       <guid>https://shaobinqiu.github.io/post/js-flowchart-diagrams/</guid>
       <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-flowchart&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
+&lt;pre&gt;&lt;code class=&#34;language-flowchart&#34; data-lang=&#34;flowchart&#34;&gt;st=&amp;gt;start: Start|past:&amp;gt;http://www.google.com[blank]
 e=&amp;gt;end: End:&amp;gt;http://www.google.com
 op1=&amp;gt;operation: My Operation|past
 op2=&amp;gt;operation: Stuff|current
@@ -256,8 +249,7 @@ c2(no)-&amp;gt;op2-&amp;gt;e
       
       <guid>https://shaobinqiu.github.io/post/js-sequence-diagrams/</guid>
       <description>&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sequence&#34;&gt;Andrew-&amp;gt;China: Says Hello
+&lt;pre&gt;&lt;code class=&#34;language-sequence&#34; data-lang=&#34;sequence&#34;&gt;Andrew-&amp;gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&amp;gt;Andrew: How are you?
 Andrew-&amp;gt;&amp;gt;China: I am good thanks!
@@ -270,10 +262,10 @@ Andrew-&amp;gt;&amp;gt;China: I am good thanks!
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/syntax-highlighting/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
-  alert(&amp;quot;Hello, World!&amp;quot;)
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;helloWorld&lt;/span&gt; () {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;alert&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;)
 }
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/vasp_parcharg/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="指定能级的电子时空间分布的vasp计算" />
 <meta property="og:description" content="电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_parcharg/" />
-<meta property="article:published_time" content="2018-10-13T01:37:56&#43;08:00"/>
-<meta property="article:modified_time" content="2018-10-13T01:37:56&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_parcharg/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-10-13T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2018-10-13T01:37:56&#43;08:00" />
 
 <meta itemprop="name" content="指定能级的电子时空间分布的vasp计算">
-<meta itemprop="description" content="电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化">
-
-
-<meta itemprop="datePublished" content="2018-10-13T01:37:56&#43;08:00" />
+<meta itemprop="description" content="电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化"><meta itemprop="datePublished" content="2018-10-13T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-13T01:37:56&#43;08:00" />
 <meta itemprop="wordCount" content="290">
-
-
-
-<meta itemprop="keywords" content="vasp,“PARCHG”," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="vasp,“PARCHG”," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="指定能级的电子时空间分布的vasp计算"/>
 <meta name="twitter:description" content="电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。 计算步骤： 1.结构优化"/>
 
@@ -139,28 +132,18 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#计算步骤">计算步骤：</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。</p>
-
+      <p>电子密度的时空间分布可以用ＶＥＳＴＡ软件打开CHGCAR(LCHARG=T保留)查看，这里介绍指定能级的电子分布计算。</p>
 <h1 id="计算步骤">计算步骤：</h1>
-
 <p>1.结构优化计算（迟豫计算）
 LCHARG=T保留CHGCAR；  LWAVE=T保留WAVECAR
 和普通晶体结构优化无区别。</p>
-
 <p>2.计算PARCHG
 利用上一步的计算，查看EIGENVAL确定要计算哪些能级的CHG，查看IBZKPT确定计算哪个Ｋ点的CHG。
 INCAR_PARCHG</p>
-
 <pre><code>system=name
 ENCUT=500
 ISIF=2
@@ -181,14 +164,9 @@ IBAND=100 101
 KPUSE=1
 LPARD=T;LSEPB=T;LSEPK=T
 
-</code></pre>
-
-<p>IBAND: 指定能级, 在EIGENVAL中找到对应序号。</p>
-
+</code></pre><p>IBAND: 指定能级, 在EIGENVAL中找到对应序号。</p>
 <p>KPUSE: 指定K点，在IBZKPT中找。</p>
-
 <p>最后一行三个参数是设置分开写PARCHG。</p>
-
 <p>得到的PARCHG文件VESTA打开即可。</p>
 
     </div>

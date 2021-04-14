@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/js-sequence-diagrams/" />
@@ -40,38 +40,28 @@
 
 <meta property="og:title" content="JS Sequence Diagrams" />
 <meta property="og:description" content="Usage
-
 Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/js-sequence-diagrams/" />
-<meta property="article:published_time" content="2015-03-04T21:57:45&#43;08:00"/>
-<meta property="article:modified_time" content="2015-03-04T21:57:45&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/js-sequence-diagrams/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2015-03-04T21:57:45&#43;08:00" />
+<meta property="article:modified_time" content="2015-03-04T21:57:45&#43;08:00" />
 
 <meta itemprop="name" content="JS Sequence Diagrams">
 <meta itemprop="description" content="Usage
-
 Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
-">
-
-
-<meta itemprop="datePublished" content="2015-03-04T21:57:45&#43;08:00" />
+"><meta itemprop="datePublished" content="2015-03-04T21:57:45&#43;08:00" />
 <meta itemprop="dateModified" content="2015-03-04T21:57:45&#43;08:00" />
 <meta itemprop="wordCount" content="249">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JS Sequence Diagrams"/>
 <meta name="twitter:description" content="Usage
-
 Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
@@ -156,29 +146,24 @@ Andrew-&gt;&gt;China: I am good thanks!
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#usage">Usage</a>
-<ul>
-<li><a href="#options">Options</a></li>
-</ul></li>
-<li><a href="#examples">Examples</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#options">Options</a></li>
+      </ul>
+    </li>
+    <li><a href="#examples">Examples</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <h2 id="usage">Usage</h2>
-
-<pre><code class="language-sequence">Andrew-&gt;China: Says Hello
+<pre><code class="language-sequence" data-lang="sequence">Andrew-&gt;China: Says Hello
 Note right of China: China thinks\nabout it
 China--&gt;Andrew: How are you?
 Andrew-&gt;&gt;China: I am good thanks!
-</code></pre>
-
-<pre><code class="language-sequence">    Andrew-&gt;China: Says Hello
+</code></pre><pre><code class="language-sequence" data-lang="sequence">    Andrew-&gt;China: Says Hello
     Note right of China: China thinks\nabout it
     China--&gt;Andrew: How are you?
     Andrew-&gt;&gt;China: I am good thanks!
@@ -192,38 +177,26 @@ Configure for all home and regular pages:
 [params.sequenceDiagrams]
   enable = true
   options = &quot;{theme: 'hand'}&quot;
-</code></pre>
+</code></pre><p>Configure for a single post in the front matter (<strong>Params in front matter have higher precedence</strong>):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">sequenceDiagrams</span>: 
+  <span style="color:#f92672">enable</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#f92672">options</span>: <span style="color:#e6db74">&#34;{theme: &#39;hand&#39;}&#34;</span>
+</code></pre></div><h3 id="options">Options</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">options</span> <span style="color:#f92672">=</span> {
+  <span style="color:#75715e">// Change the styling of the diagram, typically one of &#39;simple&#39;, &#39;hand&#39;. New themes can be registered with registerTheme(...).
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">theme</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>,
 
-<p>Configure for a single post in the front matter (<strong>Params in front matter have higher precedence</strong>):</p>
-
-<pre><code class="language-yaml">sequenceDiagrams: 
-  enable: true
-  options: &quot;{theme: 'hand'}&quot;
-</code></pre>
-
-<h3 id="options">Options</h3>
-
-<pre><code class="language-js">options = {
-  // Change the styling of the diagram, typically one of 'simple', 'hand'. New themes can be registered with registerTheme(...).
-  theme: string,
-
-  // CSS style to apply to the diagram's svg tag. (Only supported if using snap.svg)
-  css_class: string,
+  <span style="color:#75715e">// CSS style to apply to the diagram&#39;s svg tag. (Only supported if using snap.svg)
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">css_class</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">string</span>,
 }
-</code></pre>
-
-<p>See more information from <a href="https://github.com/bramp/js-sequence-diagrams">https://github.com/bramp/js-sequence-diagrams</a>.</p>
-
+</code></pre></div><p>See more information from <a href="https://github.com/bramp/js-sequence-diagrams">https://github.com/bramp/js-sequence-diagrams</a>.</p>
 <h2 id="examples">Examples</h2>
-
-<pre><code class="language-sequence">Title: Here is a title
+<pre><code class="language-sequence" data-lang="sequence">Title: Here is a title
 A-&gt;B: Normal line
 B--&gt;C: Dashed line
 C-&gt;&gt;D: Open arrow
 D--&gt;&gt;A: Dashed open arrow
-</code></pre>
-
-<pre><code>```sequence
+</code></pre><pre><code>```sequence
 Title: Here is a title
 A-&gt;B: Normal line
 B--&gt;C: Dashed line
@@ -231,17 +204,13 @@ C-&gt;&gt;D: Open arrow
 D--&gt;&gt;A: Dashed open arrow
 ```
 </code></pre>
-
-<hr />
-
-<pre><code class="language-sequence"># Example of a comment.
+<hr>
+<pre><code class="language-sequence" data-lang="sequence"># Example of a comment.
 Note left of A: Note to the\n left of A
 Note right of A: Note to the\n right of A
 Note over A: Note over A
 Note over A,B: Note over both A and B
-</code></pre>
-
-<pre><code>```sequence
+</code></pre><pre><code>```sequence
 # Example of a comment.
 Note left of A: Note to the\n left of A
 Note right of A: Note to the\n right of A

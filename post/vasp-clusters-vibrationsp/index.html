@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/" />
@@ -41,22 +41,15 @@
 <meta property="og:title" content="团簇振动频率谱的vasp计算" />
 <meta property="og:description" content="对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/" />
-<meta property="article:published_time" content="2018-07-31T01:37:56&#43;08:00"/>
-<meta property="article:modified_time" content="2018-10-08T01:37:56&#43;08:00"/>
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-07-31T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2018-10-08T01:37:56&#43;08:00" />
 
 <meta itemprop="name" content="团簇振动频率谱的vasp计算">
-<meta itemprop="description" content="对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计">
-
-
-<meta itemprop="datePublished" content="2018-07-31T01:37:56&#43;08:00" />
+<meta itemprop="description" content="对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计"><meta itemprop="datePublished" content="2018-07-31T01:37:56&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-08T01:37:56&#43;08:00" />
 <meta itemprop="wordCount" content="537">
-
-
-
-<meta itemprop="keywords" content="vasp,团簇,“振动谱”,“频率&#34;," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="vasp,团簇,“振动谱”,“频率&#34;," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="团簇振动频率谱的vasp计算"/>
 <meta name="twitter:description" content="对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计"/>
 
@@ -139,26 +132,16 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#计算步骤">计算步骤：</a></li>
-<li><a href="#其他">其他：</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<p>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。
+      <p>对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。
 （可参考朗道《力学》$24）
 vasp计算团簇是加真空层把团簇当做晶体计算，故其计算结果是3N个转动频率，若结构优化比较好（稳定），会出现6个接近零的频率（或实或虚）。（许多情况下可当做零处理）</p>
-
 <h1 id="计算步骤">计算步骤：</h1>
-
 <p>1.结构优化计算（迟豫计算）
 INCAR_R</p>
-
 <pre><code>SYSTEM=name
 NSW=200
 ENCUT=400
@@ -170,14 +153,10 @@ ISIF=2
 ISTART=0
 IBRION=2
 
-</code></pre>
-
-<p>和普通晶体结构优化无区别。</p>
-
+</code></pre><p>和普通晶体结构优化无区别。</p>
 <p>2.计算频率
 利用上一步得到的优化后的结构CAONTCAR当做这一步的POSCAR计算频率
 INCAR_V</p>
-
 <pre><code>SYSTEM=name
 NSW=300
 ENCUT=400
@@ -192,20 +171,12 @@ ISIF=2
 IBRION=5
 NFREE=2
 POTIM=0.02
-</code></pre>
-
-<p>最主要差别在于后三个参数设置，详情参照vasp manual。</p>
-
+</code></pre><p>最主要差别在于后三个参数设置，详情参照vasp manual。</p>
 <p>注意，NSW的值必须大于3Ｎ*NFREE＋１(+-dx dy dz)！！！</p>
-
 <p>NPAR必须是默认等于核数（不设置）；ENCUT要测试；LREAL可根据情况设为Auto。</p>
-
 <p>！！！真空层大小要慎重，计算速度差距很大。</p>
-
 <h1 id="其他">其他：</h1>
-
 <p>KPOINTS统一使用gamma点</p>
-
 <pre><code>Automatic mesh
 0
 Gamma
@@ -213,10 +184,7 @@ Gamma
 0     0     0
 
 
-</code></pre>
-
-<p>任务文件参考</p>
-
+</code></pre><p>任务文件参考</p>
 <pre><code>申请计算资源的命令
 
 
@@ -240,17 +208,13 @@ mv OUTCAR OUTCAR-V$i
 rm WAVECAR
 rm EIGENVAL
 done
-</code></pre>
-
-<p>最后得到的振动盘在OUTCAR里面。采用数据时能量一般使用第一步得到的能量。
+</code></pre><p>最后得到的振动盘在OUTCAR里面。采用数据时能量一般使用第一步得到的能量。
 附上提取频率和能量命令。</p>
-
 <pre><code>grep 'cm-1' OUTCAR &gt;&gt; sp.txt
 
 E=`tail -1 OSZICAR$i`
 echo $i$E &gt;&gt;energy
 </code></pre>
-
     </div>
 
     <div class="post-copyright">
