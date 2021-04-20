@@ -43,11 +43,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2018-07-31T01:37:56&#43;08:00" />
-<meta property="article:modified_time" content="2018-10-08T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2021-04-19T01:37:56&#43;08:00" />
 
 <meta itemprop="name" content="团簇振动频率谱的vasp计算">
 <meta itemprop="description" content="对于含有N个原子的团簇，平动有三个自由度，一般情况下，转动也有三个自由度，剩余3N-6自由度属于振动。 （可参考朗道《力学》$24） vasp计"><meta itemprop="datePublished" content="2018-07-31T01:37:56&#43;08:00" />
-<meta itemprop="dateModified" content="2018-10-08T01:37:56&#43;08:00" />
+<meta itemprop="dateModified" content="2021-04-19T01:37:56&#43;08:00" />
 <meta itemprop="wordCount" content="537">
 <meta itemprop="keywords" content="vasp,团簇,“振动谱”,“频率&#34;," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="团簇振动频率谱的vasp计算"/>
@@ -140,7 +140,7 @@
 （可参考朗道《力学》$24）
 vasp计算团簇是加真空层把团簇当做晶体计算，故其计算结果是3N个转动频率，若结构优化比较好（稳定），会出现6个接近零的频率（或实或虚）。（许多情况下可当做零处理）</p>
 <h1 id="计算步骤">计算步骤：</h1>
-<p>1.结构优化计算（迟豫计算）
+<p>1.结构优化计算（驰豫计算）
 INCAR_R</p>
 <pre><code>SYSTEM=name
 NSW=200
@@ -224,7 +224,7 @@ echo $i$E &gt;&gt;energy
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2018-10-08</span>
+    <span class="item-content">2021-04-19</span>
   </p>
   
   
