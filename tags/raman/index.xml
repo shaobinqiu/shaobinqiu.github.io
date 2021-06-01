@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>“Raman” on Daozhang</title>
+    <link>https://shaobinqiu.github.io/tags/raman/</link>
+    <description>Recent content in “Raman” on Daozhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Jun 2021 01:37:56 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/tags/raman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>分子Raman spectrum的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp_ramancalc/</link>
+      <pubDate>Tue, 01 Jun 2021 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_ramancalc/</guid>
+      <description>1.优化弛豫结构 2.计算分子的声子 这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。 3.Dielectric Tensor的计算 INCAR ENCUT = 600 EDIFF</description>
+    </item>
+    
+  </channel>
+</rss>

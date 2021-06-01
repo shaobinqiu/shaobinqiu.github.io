@@ -6,7 +6,7 @@
     <description>Recent content on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2020 09:54:13 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 01:37:56 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme preview</title>
       <link>https://shaobinqiu.github.io/post/even-preview/</link>
@@ -23,6 +23,15 @@
       
       <guid>https://shaobinqiu.github.io/about/</guid>
       <description>粗缯大布裹生涯 腹有诗书气自华</description>
+    </item>
+    
+    <item>
+      <title>分子Raman spectrum的vasp计算</title>
+      <link>https://shaobinqiu.github.io/post/vasp_ramancalc/</link>
+      <pubDate>Tue, 01 Jun 2021 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_ramancalc/</guid>
+      <description>1.优化弛豫结构 2.计算分子的声子 这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。 3.Dielectric Tensor的计算 INCAR ENCUT = 600 EDIFF</description>
     </item>
     
     <item>

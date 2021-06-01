@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>matlab - Daozhang</title>
+  <title>分子Raman spectrum的vasp计算 - Daozhang</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="Matlab绘图中用到的直线属性 （1）LineStyle：线形 （2）LineWidth：线宽 （3）Color：颜色 （4）MarkerType" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="1.优化弛豫结构 2.计算分子的声子 这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。 3.Dielectric Tensor的计算 INCAR ENCUT = 600 EDIFF" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
-<link rel="canonical" href="https://shaobinqiu.github.io/post/matlab/" />
+<link rel="canonical" href="https://shaobinqiu.github.io/post/vasp_ramancalc/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,20 +38,20 @@
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="matlab" />
-<meta property="og:description" content="Matlab绘图中用到的直线属性 （1）LineStyle：线形 （2）LineWidth：线宽 （3）Color：颜色 （4）MarkerType" />
+<meta property="og:title" content="分子Raman spectrum的vasp计算" />
+<meta property="og:description" content="1.优化弛豫结构 2.计算分子的声子 这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。 3.Dielectric Tensor的计算 INCAR ENCUT = 600 EDIFF" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://shaobinqiu.github.io/post/matlab/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-08-26T09:54:13&#43;08:00" />
-<meta property="article:modified_time" content="2020-09-27T10:54:13&#43;08:00" />
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_ramancalc/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-01T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-01T01:37:57&#43;08:00" />
 
-<meta itemprop="name" content="matlab">
-<meta itemprop="description" content="Matlab绘图中用到的直线属性 （1）LineStyle：线形 （2）LineWidth：线宽 （3）Color：颜色 （4）MarkerType"><meta itemprop="datePublished" content="2020-08-26T09:54:13&#43;08:00" />
-<meta itemprop="dateModified" content="2020-09-27T10:54:13&#43;08:00" />
-<meta itemprop="wordCount" content="256">
-<meta itemprop="keywords" content="matlab,plot," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="matlab"/>
-<meta name="twitter:description" content="Matlab绘图中用到的直线属性 （1）LineStyle：线形 （2）LineWidth：线宽 （3）Color：颜色 （4）MarkerType"/>
+<meta itemprop="name" content="分子Raman spectrum的vasp计算">
+<meta itemprop="description" content="1.优化弛豫结构 2.计算分子的声子 这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。 3.Dielectric Tensor的计算 INCAR ENCUT = 600 EDIFF"><meta itemprop="datePublished" content="2021-06-01T01:37:56&#43;08:00" />
+<meta itemprop="dateModified" content="2021-06-01T01:37:57&#43;08:00" />
+<meta itemprop="wordCount" content="392">
+<meta itemprop="keywords" content="vasp,“Raman”," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="分子Raman spectrum的vasp计算"/>
+<meta name="twitter:description" content="1.优化弛豫结构 2.计算分子的声子 这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。 3.Dielectric Tensor的计算 INCAR ENCUT = 600 EDIFF"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -118,12 +118,12 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">matlab</h1>
+      <h1 class="post-title">分子Raman spectrum的vasp计算</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2020-08-26 </span>
+        <span class="post-time"> 2021-06-01 </span>
         <div class="post-category">
-            <a href="/categories/matlab/"> matlab </a>
+            <a href="/categories/vasp/"> vasp </a>
             </div>
         
       </div>
@@ -136,147 +136,57 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="matlab绘图中用到的直线属性">Matlab绘图中用到的直线属性</h1>
-<p>（1）LineStyle：线形</p>
-<p>（2）LineWidth：线宽</p>
-<p>（3）Color：颜色</p>
-<p>（4）MarkerType：标记点的形状</p>
-<p>（5）MarkerSize：标记点的大小</p>
-<p>（6）MarkerFaceColor：标记点内部的填充颜色</p>
-<p>（7）MarkerEdgeColor：标记点边缘的颜色</p>
-<h1 id="线形">线形</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">符号</th>
-<th style="text-align:right">线型</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">-</td>
-<td style="text-align:right">实线</td>
-</tr>
-<tr>
-<td style="text-align:left">&ndash;</td>
-<td style="text-align:right">虚线</td>
-</tr>
-<tr>
-<td style="text-align:left">：</td>
-<td style="text-align:right">点线</td>
-</tr>
-<tr>
-<td style="text-align:left">-.</td>
-<td style="text-align:right">点横线</td>
-</tr>
-</tbody>
-</table>
-<h1 id="点形">点形</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">符号</th>
-<th>点形</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">+</td>
-<td>加号</td>
-</tr>
-<tr>
-<td style="text-align:center">o</td>
-<td>圆圈</td>
-</tr>
-<tr>
-<td style="text-align:center">*</td>
-<td>星号</td>
-</tr>
-<tr>
-<td style="text-align:center">.</td>
-<td>实心点</td>
-</tr>
-<tr>
-<td style="text-align:center">x</td>
-<td>叉号</td>
-</tr>
-<tr>
-<td style="text-align:center">s</td>
-<td>正方形</td>
-</tr>
-<tr>
-<td style="text-align:center">d</td>
-<td>钻石形</td>
-</tr>
-<tr>
-<td style="text-align:center">^</td>
-<td>上三角形</td>
-</tr>
-<tr>
-<td style="text-align:center">v</td>
-<td>下三角形</td>
-</tr>
-<tr>
-<td style="text-align:center">&gt;</td>
-<td>右三角形</td>
-</tr>
-<tr>
-<td style="text-align:center">&lt;</td>
-<td>左三角形</td>
-</tr>
-<tr>
-<td style="text-align:center">p</td>
-<td>五角星形</td>
-</tr>
-<tr>
-<td style="text-align:center">h</td>
-<td>六角星形</td>
-</tr>
-</tbody>
-</table>
-<h1 id="颜色">颜色</h1>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">符号</th>
-<th style="text-align:right">颜色</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">r</td>
-<td style="text-align:right">红</td>
-</tr>
-<tr>
-<td style="text-align:left">g</td>
-<td style="text-align:right">绿</td>
-</tr>
-<tr>
-<td style="text-align:left">b</td>
-<td style="text-align:right">蓝</td>
-</tr>
-<tr>
-<td style="text-align:left">c</td>
-<td style="text-align:right">蓝绿</td>
-</tr>
-<tr>
-<td style="text-align:left">m</td>
-<td style="text-align:right">紫红</td>
-</tr>
-<tr>
-<td style="text-align:left">y</td>
-<td style="text-align:right">黄</td>
-</tr>
-<tr>
-<td style="text-align:left">k</td>
-<td style="text-align:right">黑</td>
-</tr>
-<tr>
-<td style="text-align:left">w</td>
-<td style="text-align:right">白</td>
-</tr>
-</tbody>
-</table>
+      <h1 id="1优化弛豫结构">1.优化弛豫结构</h1>
+<h1 id="2计算分子的声子httpsshaobinqiugithubiopostvasp-clusters-vibrationsp">2.<a href="https://shaobinqiu.github.io/post/vasp-clusters-vibrationsp/">计算分子的声子</a></h1>
+<p>这里注意INCAR应该加上NWRITE=3: 后期计算介电响应时读取文件要求。</p>
+<h1 id="3dielectric-tensor的计算">3.Dielectric Tensor的计算</h1>
+<p>INCAR</p>
+<pre><code>ENCUT = 600
+EDIFF = 1e-6
+ISMEAR = 0
+SIGMA = 0.05
+POTIM = 0.1
+LCHARG = FALSE
+LWAVE = FALSE
+IBRION=6
+ISIF=3
+NFREE=4
+EDIFFG = -0.001
+</code></pre><p>关键参数:  将IBRION=6；ISIF=3；NFREE=4；</p>
+<p>不能设置NPAR， 不然会报错：</p>
+<pre><code>ERROR
+|      VASP internal routines  have requested a change of the k-point set.    |
+|      Unfortunately this is only possible if NPAR=number of nodes.           |
+|      Please remove the tag NPAR from the INCAR file and restart the         |
+|      calculations.                                                          |
+</code></pre><p>弹性矩阵会直接写在OUTCAR里。</p>
+<p>计算得到的elastic moduli 是直角坐标下的，只要在同一直角坐标下，不同取lattice，结果相同。测试过diamond的pcell和supercell。</p>
+<p>pcell</p>
+<pre><code>
+ TOTAL ELASTIC MODULI (kBar)
+ Direction    XX          YY          ZZ          XY          YZ          ZX
+ --------------------------------------------------------------------------------
+ XX       10531.4122   1243.9931   1243.9931      0.0000     -0.0000     -0.0000
+ YY        1243.9931  10531.4122   1243.9931      0.0000      0.0000      0.0000
+ ZZ        1243.9931   1243.9931  10531.4122      0.0000     -0.0000      0.0000
+ XY           0.0000      0.0000      0.0000   5628.7346      0.0000      0.0000
+ YZ          -0.0000      0.0000     -0.0000      0.0000   5628.7346     -0.0000
+ ZX          -0.0000      0.0000      0.0000      0.0000     -0.0000   5628.7346
+ --------------------------------------------------------------------------------
+
+
+</code></pre><p>supercell</p>
+<pre><code> TOTAL ELASTIC MODULI (kBar)
+ Direction    XX          YY          ZZ          XY          YZ          ZX
+ --------------------------------------------------------------------------------
+ XX       10534.8952   1243.0926   1243.0926      0.0000      0.0000      0.0000
+ YY        1243.0926  10534.8952   1243.0926      0.0000      0.0000     -0.0000
+ ZZ        1243.0926   1243.0926  10534.8952      0.0000     -0.0000      0.0000
+ XY           0.0000      0.0000      0.0000   5629.8633      0.0000     -0.0000
+ YZ           0.0000      0.0000     -0.0000     -0.0000   5629.8633     -0.0000
+ ZX           0.0000     -0.0000      0.0000     -0.0000     -0.0000   5629.8633
+ --------------------------------------------------------------------------------
+</code></pre><p>实验数据参考： <a href="https://doi.org/10.1063/1.4704698">https://doi.org/10.1063/1.4704698</a></p>
 
     </div>
 
@@ -287,23 +197,23 @@
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
-    <span class="item-content">2020-09-27</span>
+    <span class="item-content">2021-06-01</span>
   </p>
   
   
 </div><footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/matlab/">matlab</a>
-          <a href="/tags/plot/">plot</a>
+          <a href="/tags/vasp/">vasp</a>
+          <a href="/tags/raman/">“Raman”</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/vasp_ramancalc/">
+        <a class="prev" href="/post/even-preview/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">分子Raman spectrum的vasp计算</span>
+            <span class="prev-text nav-default">Theme preview</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/bloch_theorem/">
-            <span class="next-text nav-default">Bloch theorem</span>
+        <a class="next" href="/post/matlab/">
+            <span class="next-text nav-default">matlab</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
