@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>vasp · Daozhang</title>
+  <title>vasp计算能带和态密度 - Daozhang</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="qiusb" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="qiusb" /><meta name="description" content="1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE: 后面" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.82.0 with even 4.0.0" />
 
 
-<link rel="canonical" href="https://shaobinqiu.github.io/tags/vasp/" />
-  <link href="https://shaobinqiu.github.io/tags/vasp/index.xml" rel="alternate" type="application/rss+xml" title="Daozhang" />
-  <link href="https://shaobinqiu.github.io/tags/vasp/index.xml" rel="feed" type="application/rss+xml" title="Daozhang" />
+<link rel="canonical" href="https://shaobinqiu.github.io/post/vasp_band_dos/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -40,15 +38,20 @@
 <link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
-<meta property="og:title" content="vasp" />
-<meta property="og:description" content="Hugo theme even example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://shaobinqiu.github.io/tags/vasp/" />
+<meta property="og:title" content="vasp计算能带和态密度" />
+<meta property="og:description" content="1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE: 后面" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shaobinqiu.github.io/post/vasp_band_dos/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-03-05T01:37:56&#43;08:00" />
+<meta property="article:modified_time" content="2024-03-05T01:37:57&#43;08:00" />
 
-<meta itemprop="name" content="vasp">
-<meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="vasp"/>
-<meta name="twitter:description" content="Hugo theme even example site."/>
+<meta itemprop="name" content="vasp计算能带和态密度">
+<meta itemprop="description" content="1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE: 后面"><meta itemprop="datePublished" content="2024-03-05T01:37:56&#43;08:00" />
+<meta itemprop="dateModified" content="2024-03-05T01:37:57&#43;08:00" />
+<meta itemprop="wordCount" content="309">
+<meta itemprop="keywords" content="vasp,Band,Dos," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="vasp计算能带和态密度"/>
+<meta name="twitter:description" content="1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE: 后面"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -112,90 +115,77 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="archive" class="archive">
-  <div class="archive-title tag">
-        <h2 class="archive-name">vasp</h2>
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">vasp计算能带和态密度</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-03-05 </span>
+        <div class="post-category">
+            <a href="/categories/vasp/"> vasp </a>
+            </div>
+        
       </div>
+    </header>
 
-  <div class="archive-post">
-      <span class="archive-post-time">
-        2024-03-05
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_band_dos/" class="archive-post-link">
-          vasp计算能带和态密度
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2021-06-01
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_ramancalc/" class="archive-post-link">
-          分子Raman spectrum的vasp计算
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2019-01-21
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_elasticmoduli/" class="archive-post-link">
-          弹性模量的vasp计算
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2018-10-15
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_electron_phonon_coupling/" class="archive-post-link">
-          电声耦合强度的vasp计算
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2018-10-13
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_parcharg/" class="archive-post-link">
-          指定能级的电子时空间分布的vasp计算
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2018-09-11
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_example/" class="archive-post-link">
-          15上的vasp计算提交示范
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2018-08-08
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp_scripts/" class="archive-post-link">
-          Vasp_scripts
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2018-07-31
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/vasp-clusters-vibrationsp/" class="archive-post-link">
-          团簇振动频率谱的vasp计算
-        </a>
-      </span>
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="1弛豫结构">1.弛豫结构</h1>
+<h1 id="2自洽计算scf">2.自洽计算(scf)</h1>
+<p>将弛豫后结构作为输入POSCAR，进行静态计算：</p>
+<pre><code>NSW=0    
+
+LCHARG=.TRUE.
+</code></pre><p>这里注意INCAR应该加上LCHARG=TRUE: 后面计算能带时需要读取CHARG文件。</p>
+<h1 id="3能带band的计算">3.能带(band)的计算</h1>
+<p>读入上一步的CHGCAR，进行非自洽计算:把INCAR，POTCAR， POSCAR，CHGCAR拷贝过来。</p>
+<p>INCAR需要修改的参数</p>
+<pre><code>ISTART=1
+ICHARG=11
+LCHARG=F
+ISMEAR=0
+</code></pre><p>准备高对称点KPOINTS，因为能带结构就是在高对称点的连线上的能级，所以先前使用的五行式就不适用了，需要找到计算体系的倒易空间的高对称点路径。
+利用vaspkit可以很方便得到高对称电路径，生成的高对称点路径在KPATH.in文件里，将其复制成为 KPOINTS即可开始非自洽计算。</p>
+
     </div>
-</section>
 
-<nav class="pagination">
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">qiusb</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2024-03-05</span>
+  </p>
   
   
-</nav>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/vasp/">vasp</a>
+          <a href="/tags/band/">Band</a>
+          <a href="/tags/dos/">Dos</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/even-preview/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Theme preview</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/vasp_ramancalc/">
+            <span class="next-text nav-default">分子Raman spectrum的vasp计算</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
 
@@ -245,6 +235,13 @@
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/dist/even.1029e815.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
 

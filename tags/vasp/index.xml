@@ -6,7 +6,16 @@
     <description>Recent content in vasp on Daozhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jun 2021 01:37:56 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/tags/vasp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2024 01:37:56 +0800</lastBuildDate><atom:link href="https://shaobinqiu.github.io/tags/vasp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vasp计算能带和态密度</title>
+      <link>https://shaobinqiu.github.io/post/vasp_band_dos/</link>
+      <pubDate>Tue, 05 Mar 2024 01:37:56 +0800</pubDate>
+      
+      <guid>https://shaobinqiu.github.io/post/vasp_band_dos/</guid>
+      <description>1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE: 后面</description>
+    </item>
+    
     <item>
       <title>分子Raman spectrum的vasp计算</title>
       <link>https://shaobinqiu.github.io/post/vasp_ramancalc/</link>
