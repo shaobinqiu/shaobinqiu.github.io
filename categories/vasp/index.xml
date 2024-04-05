@@ -13,7 +13,7 @@
       <pubDate>Tue, 05 Mar 2024 01:37:56 +0800</pubDate>
       
       <guid>https://shaobinqiu.github.io/post/vasp_band_dos/</guid>
-      <description>1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE: 后面</description>
+      <description>1.弛豫结构 2.自洽计算(scf) 将弛豫后结构作为输入POSCAR，进行静态计算： # band NSW=0 LCHARG=.TRUE. 这里注意INCAR应该加上LCHARG=TRUE:</description>
     </item>
     
     <item>
